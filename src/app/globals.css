@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: 248 249 251;
+  --surface: 255 255 255;
+  --surface-2: 244 246 249;
+  --border: 226 231 237;
+  --text: 22 27 34;
+  --muted: 100 110 122;
+  --brand: 79 70 229; /* indigo-600 */
+  --brand-fg: 255 255 255;
+}
+
+:root.dark {
+  --bg: 13 17 23;
+  --surface: 22 27 34;
+  --surface-2: 30 37 46;
+  --border: 45 52 62;
+  --text: 230 234 240;
+  --muted: 148 158 170;
+  --brand: 129 140 248; /* indigo-400 */
+  --brand-fg: 17 20 26;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: rgb(var(--bg));
+  color: rgb(var(--text));
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+@layer components {
+  .card {
+    @apply rounded-2xl border border-border bg-surface p-4 shadow-sm;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl px-4 py-2 text-sm font-medium transition-colors disabled:opacity-50 disabled:pointer-events-none;
+  }
+  .btn-primary {
+    @apply btn bg-brand text-brand-fg hover:opacity-90;
+  }
+  .btn-ghost {
+    @apply btn border border-border bg-surface text-text hover:bg-surface-2;
+  }
+  .btn-sm {
+    @apply px-3 py-1.5 text-xs;
+  }
+  .input {
+    @apply w-full rounded-xl border border-border bg-surface px-3 py-2 text-sm text-text placeholder:text-muted focus:outline-none focus:ring-2 focus:ring-brand/40;
+  }
+  .label {
+    @apply mb-1 block text-sm font-medium text-text;
+  }
+  .badge {
+    @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium;
+  }
+  .muted {
+    @apply text-muted;
+  }
+}
