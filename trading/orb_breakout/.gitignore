@@ -1,0 +1,7 @@
+# Downloaded bars and generated study output -- regenerate, don't commit
+data/
+results/
+*.png
+*.csv
+!requirements.txt
+__pycache__/

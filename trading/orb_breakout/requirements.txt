@@ -1,0 +1,18 @@
+# Core (required)
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+
+# Default data provider: free, but only ~60 days of 5-minute history
+yfinance>=0.2.40
+
+# --- Optional providers: install only the one you actually use -------------
+# alpaca-py>=0.20        # Alpaca  -- history back to 2016 (SIP feed)
+# requests>=2.31         # Polygon -- REST aggregates
+# databento>=0.34        # Databento -- 1m OHLCV, resampled to 5m here
+# ib_insync>=0.9.86      # Interactive Brokers -- needs TWS/IB Gateway running
+#
+# ATR and VWAP are computed directly in numpy/pandas rather than via
+# pandas_ta or ta: it is a few lines either way, it removes a dependency that
+# breaks often against new numpy releases, and -- more importantly -- it keeps
+# the exact indicator definitions visible and auditable in this repo.
