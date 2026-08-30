@@ -1,0 +1,19 @@
+{
+  "name": "Social Action Vault",
+  "short_name": "Vault",
+  "description": "Save social posts and turn them into action.",
+  "start_url": "/dashboard",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#4f46e5",
+  "icons": [],
+  "share_target": {
+    "action": "/save",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  }
+}
