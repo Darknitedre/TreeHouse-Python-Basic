@@ -7,6 +7,7 @@ import { Card } from '../../components/Card';
 import { Screen } from '../../components/Screen';
 import { SectionTitle } from '../../components/SectionTitle';
 import { Txt } from '../../components/Txt';
+import { getLecture } from '../../data/lectures';
 import { getStory } from '../../data/stories';
 import { StudyStackParamList } from '../../navigation/types';
 import { useProgress } from '../../storage/ProgressContext';
@@ -45,6 +46,16 @@ export function StoryScreen({ route, navigation }: Props) {
           {story.testament === 'OT' ? 'Old Testament' : 'New Testament'} · {story.passage}
         </Txt>
       </View>
+
+      {getLecture(story.id) ? (
+        <BigButton
+          label="Listen to the lesson"
+          icon="headset"
+          kind="outline"
+          onPress={() => navigation.navigate('Lecture', { storyId: story.id })}
+          style={{ marginVertical: 8 }}
+        />
+      ) : null}
 
       <SectionTitle title="Summary" icon="document-text-outline" />
       <Card>

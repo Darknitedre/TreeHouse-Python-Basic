@@ -20,6 +20,22 @@ export interface ReviewQuestion {
   answer: string;
 }
 
+export interface LectureSection {
+  id: string;
+  title: string;
+  /** Spoken text. Separate paragraphs with a blank line ("\n\n"). */
+  text: string;
+  /** Optional recording to play instead of text-to-speech (see src/audio/localAudio.ts). */
+  audio?: string;
+}
+
+/** A spoken teaching for one story (Listen tab). */
+export interface Lecture {
+  /** Must match the id of a story in src/data/stories */
+  storyId: string;
+  sections: LectureSection[];
+}
+
 export interface Story {
   id: string;
   title: string;

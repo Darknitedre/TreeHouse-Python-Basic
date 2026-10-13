@@ -25,9 +25,9 @@ Run lint and typecheck before declaring any task done.
 
 ## Navigation & Routing
 
-- Use **Expo Router** for all navigation. Routes live in `src/app/` — every file there is a screen, `_layout.tsx` files define navigators. Keep non-route code (components, hooks, utils) outside `src/app/`.
-- Import `Link`, `router`, and `useLocalSearchParams` from `expo-router`.
-- Docs: https://docs.expo.dev/router/introduction.md
+- This project uses **React Navigation** directly (not Expo Router): bottom tabs with a native stack per tab, defined in `src/navigation/RootNavigator.tsx`. Screens live in `src/screens/<tab>/`.
+- Content (stories, lectures, devotionals, quiz questions) lives in JSON under `src/data/`. Scripture quotes must be exact KJV.
+- The app must keep working in **Expo Go**, so only use modules bundled with Expo Go.
 
 ## Building with EAS
 

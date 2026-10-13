@@ -5,16 +5,19 @@ import { createNativeStackNavigator, NativeStackNavigationOptions } from '@react
 import { ComponentProps, useMemo } from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { ComingSoonScreen } from '../screens/ComingSoonScreen';
+import { LectureScreen } from '../screens/listen/LectureScreen';
+import { LecturesScreen } from '../screens/listen/LecturesScreen';
 import { SettingsScreen } from '../screens/settings/SettingsScreen';
 import { LibraryScreen } from '../screens/study/LibraryScreen';
 import { StoryScreen } from '../screens/study/StoryScreen';
 import { useTheme } from '../theme/ThemeProvider';
 import { SettingsButton } from './SettingsButton';
-import { RootStackParamList, StudyStackParamList, TabParamList } from './types';
+import { ListenStackParamList, RootStackParamList, StudyStackParamList, TabParamList } from './types';
 
 const Root = createNativeStackNavigator<RootStackParamList>();
 const Tabs = createBottomTabNavigator<TabParamList>();
 const StudyStack = createNativeStackNavigator<StudyStackParamList>();
+const ListenStack = createNativeStackNavigator<ListenStackParamList>();
 
 type IconName = ComponentProps<typeof Ionicons>['name'];
 
@@ -36,7 +39,18 @@ function StudyNavigator() {
     <StudyStack.Navigator screenOptions={options}>
       <StudyStack.Screen name="Library" component={LibraryScreen} options={{ title: 'Bible Stories' }} />
       <StudyStack.Screen name="Story" component={StoryScreen} options={{ title: '' }} />
+      <StudyStack.Screen name="Lecture" component={LectureScreen} options={{ title: '' }} />
     </StudyStack.Navigator>
+  );
+}
+
+function ListenNavigator() {
+  const options = useStackOptions();
+  return (
+    <ListenStack.Navigator screenOptions={options}>
+      <ListenStack.Screen name="Lectures" component={LecturesScreen} options={{ title: 'Listen' }} />
+      <ListenStack.Screen name="Lecture" component={LectureScreen} options={{ title: '' }} />
+    </ListenStack.Navigator>
   );
 }
 
@@ -56,7 +70,6 @@ function makeComingSoon(title: string, phase: number, icon: IconName, blurb: str
 }
 
 const DevotionalNavigator = makeComingSoon('Devotional', 3, 'sunny-outline', 'A new devotional every day, with a streak counter, journal, and reminders.');
-const ListenNavigator = makeComingSoon('Listen', 2, 'headset-outline', 'Teaching lessons read aloud for every story, with speed control.');
 const PlayNavigator = makeComingSoon('Play', 4, 'trophy-outline', 'Bible trivia for family game night or over the phone.');
 
 const TAB_ICONS: Record<keyof TabParamList, [IconName, IconName]> = {

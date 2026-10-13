@@ -38,10 +38,32 @@ Each story has the following fields (see `src/types/content.ts`):
 | `lesson` | What the story teaches |
 | `reviewQuestions` | 3–5 items of `{ "question": "...", "answer": "..." }` |
 
+### A new lecture (Listen tab)
+1. Copy a file in `src/data/lectures/` (for example `jonah.json`) and set `"storyId"` to the story's `id`.
+2. Edit the `sections`. Each section has an `id`, a `title`, and the `text` to read aloud.
+   Separate paragraphs with a blank line (`\n\n` inside the JSON string).
+   Write Bible references the way they should be spoken, e.g. "Genesis chapter one, verse one".
+3. Add one line to `src/data/lectures/index.ts`: `require('./ruth.json'),`
+
+About 160 words make one minute of listening at normal speed.
+
+### Using recorded MP3s instead of the computer voice
+Any section can play a recording instead of text-to-speech. Just add an `"audio"` field to that section:
+
+- **A file inside the app:** put `my-file.mp3` in `assets/audio/`, register it in
+  `src/audio/localAudio.ts` (instructions are in that file), then use `"audio": "my-file"`.
+- **A file on the internet:** `"audio": "https://example.com/my-file.mp3"`.
+
+Sections without `"audio"` keep using text-to-speech, so you can switch over one section at a time.
+The on-screen text is still shown, but while a recording plays, the whole section is highlighted rather than each sentence.
+
+The player itself is `src/audio/AudioPlayer.tsx`. Give it any list of sections and it works on any screen.
+
 ## Project layout
 ```
 src/
-  data/         JSON content (stories, and later devotionals, quiz questions)
+  data/         JSON content: stories/, lectures/ (and later devotionals, quiz questions)
+  audio/        Reusable audio player (text-to-speech + MP3 engines)
   types/        Shapes of the JSON content
   theme/        Colors, light/dark mode, text size
   storage/      Things saved on the phone (settings, progress)

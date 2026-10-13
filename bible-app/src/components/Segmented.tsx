@@ -12,14 +12,17 @@ export function Segmented<T extends string>({
   options,
   value,
   onChange,
+  compact,
 }: {
   options: Option<T>[];
   value: T;
   onChange: (v: T) => void;
+  /** Keep all options on one row (for short labels like "1x"). */
+  compact?: boolean;
 }) {
   const { colors } = useTheme();
   return (
-    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
+    <View style={{ flexDirection: 'row', flexWrap: compact ? 'nowrap' : 'wrap', gap: compact ? 6 : 8 }}>
       {options.map((o) => {
         const selected = o.value === value;
         return (
@@ -31,9 +34,10 @@ export function Segmented<T extends string>({
             accessibilityLabel={o.label}
             style={{
               flexGrow: 1,
-              minHeight: 52,
-              minWidth: 90,
-              paddingHorizontal: 12,
+              flexBasis: compact ? 0 : undefined,
+              minHeight: compact ? 48 : 52,
+              minWidth: compact ? 0 : 90,
+              paddingHorizontal: compact ? 4 : 12,
               borderRadius: 12,
               borderWidth: 2,
               borderColor: selected ? colors.primary : colors.cardBorder,
