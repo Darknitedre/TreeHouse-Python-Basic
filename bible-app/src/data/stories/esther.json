@@ -1,0 +1,68 @@
+{
+  "id": "esther",
+  "title": "Queen Esther",
+  "testament": "OT",
+  "order": 9,
+  "icon": "👑",
+  "passage": "Esther 2–9",
+  "summary": "In the Persian empire, King Ahasuerus searched for a new queen. A young Jewish woman named Esther, also called Hadassah, was chosen. She had been raised by her cousin Mordecai after her parents died, and at his advice she kept her Jewish identity a secret. Mordecai once uncovered a plot to kill the king and saved his life. Later, the king promoted a proud man named Haman, and everyone bowed to him — except Mordecai. Furious, Haman plotted to destroy all the Jews in the empire and got the king to sign a decree. Mordecai urged Esther to go to the king, saying, \"Who knoweth whether thou art come to the kingdom for such a time as this?\" But anyone who approached the king without being called could be put to death. Esther asked the Jews to fast for three days, then said, \"If I perish, I perish.\" The king held out his golden sceptre and welcomed her. At a banquet she revealed Haman's plot. Haman was hanged on the gallows he had built for Mordecai, Mordecai was honored, and the Jews were allowed to defend themselves. The feast of Purim celebrates this deliverance.",
+  "scriptures": [
+    {
+      "ref": "Esther 2:17",
+      "text": "And the king loved Esther above all the women, and she obtained grace and favour in his sight more than all the virgins; so that he set the royal crown upon her head, and made her queen instead of Vashti."
+    },
+    {
+      "ref": "Esther 4:14",
+      "text": "For if thou altogether holdest thy peace at this time, then shall there enlargement and deliverance arise to the Jews from another place; but thou and thy father’s house shall be destroyed: and who knoweth whether thou art come to the kingdom for such a time as this?"
+    },
+    {
+      "ref": "Esther 4:16",
+      "text": "Go, gather together all the Jews that are present in Shushan, and fast ye for me, and neither eat nor drink three days, night or day: I also and my maidens will fast likewise; and so will I go in unto the king, which is not according to the law: and if I perish, I perish."
+    },
+    {
+      "ref": "Esther 9:22",
+      "text": "As the days wherein the Jews rested from their enemies, and the month which was turned unto them from sorrow to joy, and from mourning into a good day: that they should make them days of feasting and joy, and of sending portions one to another, and gifts to the poor."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Esther (Hadassah)",
+      "description": "A Jewish orphan who became queen of Persia and risked her life to save her people."
+    },
+    {
+      "name": "Mordecai",
+      "description": "Esther's cousin, who raised her and refused to bow to Haman."
+    },
+    {
+      "name": "King Ahasuerus",
+      "description": "The king of Persia, who made Esther his queen."
+    },
+    {
+      "name": "Haman",
+      "description": "The king's proud official who plotted to destroy the Jews."
+    }
+  ],
+  "lesson": "God is at work even when we can't see Him. The book of Esther never mentions God by name, yet His hand is everywhere — placing Esther in the palace at just the right time. Wherever God has put you — your job, your family, your neighborhood — may be \"for such a time as this.\" Courage often means speaking up for others, even when it costs you something.",
+  "reviewQuestions": [
+    {
+      "question": "Who raised Esther after her parents died?",
+      "answer": "Her cousin Mordecai (Esther 2:7)."
+    },
+    {
+      "question": "What was Esther's Hebrew name?",
+      "answer": "Hadassah (Esther 2:7)."
+    },
+    {
+      "question": "Who plotted to destroy the Jews?",
+      "answer": "Haman (Esther 3:5–6)."
+    },
+    {
+      "question": "How long did Esther ask the Jews to fast before she went to the king?",
+      "answer": "Three days, night or day (Esther 4:16)."
+    },
+    {
+      "question": "What feast celebrates the Jews' deliverance in the time of Esther?",
+      "answer": "Purim (Esther 9:26)."
+    }
+  ]
+}

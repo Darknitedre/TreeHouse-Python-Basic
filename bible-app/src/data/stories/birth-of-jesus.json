@@ -1,0 +1,76 @@
+{
+  "id": "birth-of-jesus",
+  "title": "The Birth of Jesus",
+  "testament": "NT",
+  "order": 1,
+  "icon": "👶",
+  "passage": "Matthew 1–2; Luke 1–2",
+  "summary": "The angel Gabriel was sent by God to a virgin named Mary in Nazareth, who was engaged to a carpenter named Joseph. Gabriel told her she would have a son by the power of the Holy Spirit, and she was to name Him Jesus. Mary answered, \"Be it unto me according to thy word.\" An angel also appeared to Joseph in a dream, telling him not to be afraid to take Mary as his wife, and that this fulfilled the prophecy: the child would be called Emmanuel, which means \"God with us.\" Because of a census ordered by Caesar Augustus, Joseph and Mary traveled to Bethlehem, the city of David. There Jesus was born, and Mary wrapped Him in swaddling clothes and laid Him in a manger, because there was no room for them in the inn. That night an angel announced the good news to shepherds in the fields, and a multitude of angels praised God. The shepherds hurried to find the baby. Later, wise men from the east followed a star to worship Jesus and gave Him gifts of gold, frankincense, and myrrh. Warned in a dream about King Herod, Joseph took Mary and Jesus to safety in Egypt.",
+  "scriptures": [
+    {
+      "ref": "Isaiah 7:14",
+      "text": "Therefore the Lord himself shall give you a sign; Behold, a virgin shall conceive, and bear a son, and shall call his name Immanuel."
+    },
+    {
+      "ref": "Luke 1:30-31",
+      "text": "And the angel said unto her, Fear not, Mary: for thou hast found favour with God. And, behold, thou shalt conceive in thy womb, and bring forth a son, and shalt call his name JESUS."
+    },
+    {
+      "ref": "Luke 2:7",
+      "text": "And she brought forth her firstborn son, and wrapped him in swaddling clothes, and laid him in a manger; because there was no room for them in the inn."
+    },
+    {
+      "ref": "Luke 2:10-11",
+      "text": "And the angel said unto them, Fear not: for, behold, I bring you good tidings of great joy, which shall be to all people. For unto you is born this day in the city of David a Saviour, which is Christ the Lord."
+    },
+    {
+      "ref": "Matthew 2:11",
+      "text": "And when they were come into the house, they saw the young child with Mary his mother, and fell down, and worshipped him: and when they had opened their treasures, they presented unto him gifts; gold, and frankincense, and myrrh."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Jesus",
+      "description": "The Son of God, born as a baby in Bethlehem — Emmanuel, God with us."
+    },
+    {
+      "name": "Mary",
+      "description": "The young woman from Nazareth chosen to be the mother of Jesus."
+    },
+    {
+      "name": "Joseph",
+      "description": "Mary's husband, a carpenter, who obeyed God's instructions and protected his family."
+    },
+    {
+      "name": "Gabriel",
+      "description": "The angel who announced to Mary that she would give birth to Jesus."
+    },
+    {
+      "name": "The shepherds and wise men",
+      "description": "Humble shepherds and wise men from the east who came to worship the newborn King."
+    }
+  ],
+  "lesson": "God kept His ancient promises by coming to us in the most humble way — as a baby in a manger. The good news was announced first to ordinary shepherds, showing that Jesus came for everyone. Mary and Joseph trusted and obeyed God even when it was hard to understand. Jesus is Emmanuel, \"God with us,\" which means you are never alone.",
+  "reviewQuestions": [
+    {
+      "question": "Which angel visited Mary?",
+      "answer": "Gabriel (Luke 1:26)."
+    },
+    {
+      "question": "What does \"Emmanuel\" mean?",
+      "answer": "\"God with us\" (Matthew 1:23)."
+    },
+    {
+      "question": "In what town was Jesus born?",
+      "answer": "Bethlehem (Luke 2:4–7; Matthew 2:1)."
+    },
+    {
+      "question": "Where did Mary lay baby Jesus?",
+      "answer": "In a manger, because there was no room for them in the inn (Luke 2:7)."
+    },
+    {
+      "question": "What gifts did the wise men bring?",
+      "answer": "Gold, frankincense, and myrrh (Matthew 2:11)."
+    }
+  ]
+}

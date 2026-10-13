@@ -1,0 +1,68 @@
+{
+  "id": "creation",
+  "title": "Creation",
+  "testament": "OT",
+  "order": 1,
+  "icon": "🌍",
+  "passage": "Genesis 1–2",
+  "summary": "In the beginning, God created the heavens and the earth out of nothing. Over six days He brought order and life to everything He made. On the first day He said, \"Let there be light,\" and there was light. On the second day He made the sky. On the third day He gathered the waters so dry land appeared, and He filled the land with plants and trees. On the fourth day He set the sun, moon, and stars in the sky. On the fifth day He filled the seas with fish and the air with birds. On the sixth day He made the land animals, and then He made people in His own image — male and female. God formed Adam from the dust of the ground, breathed life into him, and placed him in the Garden of Eden to tend it. He then made Eve to be Adam's companion. God looked at everything He had made and saw that it was very good. On the seventh day God rested, and He blessed that day and made it holy.",
+  "scriptures": [
+    {
+      "ref": "Genesis 1:1",
+      "text": "In the beginning God created the heaven and the earth."
+    },
+    {
+      "ref": "Genesis 1:3",
+      "text": "And God said, Let there be light: and there was light."
+    },
+    {
+      "ref": "Genesis 1:27",
+      "text": "So God created man in his own image, in the image of God created he him; male and female created he them."
+    },
+    {
+      "ref": "Genesis 1:31",
+      "text": "And God saw every thing that he had made, and, behold, it was very good. And the evening and the morning were the sixth day."
+    },
+    {
+      "ref": "Genesis 2:3",
+      "text": "And God blessed the seventh day, and sanctified it: because that in it he had rested from all his work which God created and made."
+    }
+  ],
+  "characters": [
+    {
+      "name": "God",
+      "description": "The Creator, who made everything by His word and called it good."
+    },
+    {
+      "name": "Adam",
+      "description": "The first man, formed from the dust of the ground and placed in the Garden of Eden."
+    },
+    {
+      "name": "Eve",
+      "description": "The first woman, made by God as a companion and helper for Adam."
+    }
+  ],
+  "lesson": "Everything begins with God. The world is not an accident — it was made on purpose by a good and powerful Creator. Every person is made in God's image, which means every person has worth and dignity, including you and the people around you. God also modeled a rhythm of work and rest. We can thank Him for His creation, care for it well, and treat others with respect because they bear His image.",
+  "reviewQuestions": [
+    {
+      "question": "What did God create on the first day?",
+      "answer": "Light. God said, \"Let there be light: and there was light\" (Genesis 1:3)."
+    },
+    {
+      "question": "On which day did God create people?",
+      "answer": "The sixth day (Genesis 1:26–31)."
+    },
+    {
+      "question": "In whose image were people created?",
+      "answer": "In God's own image (Genesis 1:27)."
+    },
+    {
+      "question": "What did God say about everything He had made?",
+      "answer": "That it was \"very good\" (Genesis 1:31)."
+    },
+    {
+      "question": "What did God do on the seventh day?",
+      "answer": "He rested from His work, and He blessed the seventh day and made it holy (Genesis 2:2–3)."
+    }
+  ]
+}

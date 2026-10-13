@@ -1,0 +1,76 @@
+{
+  "id": "crucifixion-resurrection",
+  "title": "The Crucifixion and Resurrection",
+  "testament": "NT",
+  "order": 3,
+  "icon": "✝️",
+  "passage": "Matthew 26–28; Luke 23–24; John 19–20",
+  "summary": "On the night before He died, Jesus shared the Passover meal with His disciples and gave them bread and wine as a remembrance of His body and blood. Then He prayed in the garden of Gethsemane. Judas Iscariot, one of the twelve, betrayed Him for thirty pieces of silver and led soldiers to arrest Him. That night Peter denied knowing Jesus three times before the rooster crowed. Jesus was put on trial before the Jewish council and then before the Roman governor, Pontius Pilate. Though Pilate found no fault in Him, he gave in to the crowd and handed Jesus over to be crucified. Jesus was nailed to a cross at the place called Calvary, between two criminals. Even there He prayed, \"Father, forgive them; for they know not what they do.\" He cried, \"It is finished,\" and gave up His spirit. His body was laid in a tomb belonging to Joseph of Arimathaea. Early on the first day of the week, women came to the tomb and found the stone rolled away. An angel said, \"He is not here: for he is risen, as he said.\" Jesus appeared to Mary Magdalene, to His disciples, and to many others.",
+  "scriptures": [
+    {
+      "ref": "Isaiah 53:5",
+      "text": "But he was wounded for our transgressions, he was bruised for our iniquities: the chastisement of our peace was upon him; and with his stripes we are healed."
+    },
+    {
+      "ref": "Luke 23:34",
+      "text": "Then said Jesus, Father, forgive them; for they know not what they do. And they parted his raiment, and cast lots."
+    },
+    {
+      "ref": "John 19:30",
+      "text": "When Jesus therefore had received the vinegar, he said, It is finished: and he bowed his head, and gave up the ghost."
+    },
+    {
+      "ref": "Matthew 28:6",
+      "text": "He is not here: for he is risen, as he said. Come, see the place where the Lord lay."
+    },
+    {
+      "ref": "1 Corinthians 15:3-4",
+      "text": "For I delivered unto you first of all that which I also received, how that Christ died for our sins according to the scriptures; And that he was buried, and that he rose again the third day according to the scriptures:"
+    }
+  ],
+  "characters": [
+    {
+      "name": "Jesus",
+      "description": "The Son of God, who willingly gave His life on the cross and rose again on the third day."
+    },
+    {
+      "name": "Judas Iscariot",
+      "description": "The disciple who betrayed Jesus for thirty pieces of silver."
+    },
+    {
+      "name": "Peter",
+      "description": "A disciple who denied Jesus three times, and was later restored by Him."
+    },
+    {
+      "name": "Pontius Pilate",
+      "description": "The Roman governor who handed Jesus over to be crucified."
+    },
+    {
+      "name": "Mary Magdalene",
+      "description": "A follower of Jesus who was the first to see Him after He rose."
+    }
+  ],
+  "lesson": "The cross shows how much God loves us: Jesus took the punishment for our sins so we could be forgiven. The empty tomb shows that His sacrifice worked — death is defeated. Because Jesus lives, we have hope that is stronger than any failure, sorrow, or loss. Like Peter, no one is too far gone to be forgiven and restored.",
+  "reviewQuestions": [
+    {
+      "question": "Who betrayed Jesus, and for how much?",
+      "answer": "Judas Iscariot, for thirty pieces of silver (Matthew 26:14–15)."
+    },
+    {
+      "question": "How many times did Peter deny knowing Jesus?",
+      "answer": "Three times (Matthew 26:34, 69–75)."
+    },
+    {
+      "question": "Who was the Roman governor who sentenced Jesus?",
+      "answer": "Pontius Pilate (Matthew 27:2, 26)."
+    },
+    {
+      "question": "What did Jesus pray for the people who crucified Him?",
+      "answer": "\"Father, forgive them; for they know not what they do\" (Luke 23:34)."
+    },
+    {
+      "question": "On what day did Jesus rise from the dead?",
+      "answer": "On the third day — early on the first day of the week (1 Corinthians 15:4; Matthew 28:1)."
+    }
+  ]
+}

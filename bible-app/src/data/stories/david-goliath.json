@@ -1,0 +1,72 @@
+{
+  "id": "david-goliath",
+  "title": "David and Goliath",
+  "testament": "OT",
+  "order": 6,
+  "icon": "🪨",
+  "passage": "1 Samuel 16–17",
+  "summary": "God sent the prophet Samuel to the house of Jesse in Bethlehem to anoint the next king of Israel. Samuel was impressed by Jesse's older sons, but God told him, \"The LORD looketh on the heart.\" God chose the youngest son, David, a shepherd boy. Some time later, the army of Israel under King Saul faced the Philistines. Every day a giant named Goliath of Gath came out and defied Israel, challenging any man to fight him. All the soldiers were afraid. David, bringing food to his brothers, heard Goliath's taunts and was amazed that no one would stand up for the living God. He told Saul that God had saved him from a lion and a bear while he kept his father's sheep, and God would save him from this Philistine too. David refused Saul's armor. He took his staff, chose five smooth stones from the brook, and went out with his sling. He declared that he came in the name of the Lord of hosts. David slung one stone, it struck Goliath in the forehead, and the giant fell. The Philistines fled, and Israel won the battle.",
+  "scriptures": [
+    {
+      "ref": "1 Samuel 16:7",
+      "text": "But the LORD said unto Samuel, Look not on his countenance, or on the height of his stature; because I have refused him: for the LORD seeth not as man seeth; for man looketh on the outward appearance, but the LORD looketh on the heart."
+    },
+    {
+      "ref": "1 Samuel 17:37",
+      "text": "David said moreover, The LORD that delivered me out of the paw of the lion, and out of the paw of the bear, he will deliver me out of the hand of this Philistine. And Saul said unto David, Go, and the LORD be with thee."
+    },
+    {
+      "ref": "1 Samuel 17:45",
+      "text": "Then said David to the Philistine, Thou comest to me with a sword, and with a spear, and with a shield: but I come to thee in the name of the LORD of hosts, the God of the armies of Israel, whom thou hast defied."
+    },
+    {
+      "ref": "1 Samuel 17:47",
+      "text": "And all this assembly shall know that the LORD saveth not with sword and spear: for the battle is the LORD’s, and he will give you into our hands."
+    }
+  ],
+  "characters": [
+    {
+      "name": "David",
+      "description": "The youngest son of Jesse, a shepherd boy anointed to be Israel's future king."
+    },
+    {
+      "name": "Goliath",
+      "description": "A giant Philistine warrior from Gath who defied the armies of Israel."
+    },
+    {
+      "name": "King Saul",
+      "description": "Israel's first king, who was afraid to face Goliath."
+    },
+    {
+      "name": "Jesse",
+      "description": "David's father, from Bethlehem."
+    },
+    {
+      "name": "Samuel",
+      "description": "The prophet who anointed David."
+    }
+  ],
+  "lesson": "The size of the problem is never bigger than the size of our God. David wasn't brave because he was strong; he was brave because he trusted God, who had already been faithful to him in small things. God sees the heart, not the outside. Whatever \"giant\" you are facing, you can face it in the name of the Lord, remembering how He has helped you before.",
+  "reviewQuestions": [
+    {
+      "question": "What does God look at, according to 1 Samuel 16:7?",
+      "answer": "The heart, not the outward appearance."
+    },
+    {
+      "question": "What was David's job before he fought Goliath?",
+      "answer": "He was a shepherd who kept his father's sheep (1 Samuel 16:11; 17:15)."
+    },
+    {
+      "question": "Which animals had David killed while protecting the sheep?",
+      "answer": "A lion and a bear (1 Samuel 17:34–36)."
+    },
+    {
+      "question": "How many smooth stones did David choose from the brook?",
+      "answer": "Five (1 Samuel 17:40)."
+    },
+    {
+      "question": "In whose name did David say he came against Goliath?",
+      "answer": "In the name of the LORD of hosts, the God of the armies of Israel (1 Samuel 17:45)."
+    }
+  ]
+}

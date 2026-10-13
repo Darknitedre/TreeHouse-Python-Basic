@@ -1,0 +1,72 @@
+{
+  "id": "abraham",
+  "title": "Abraham's Faith",
+  "testament": "OT",
+  "order": 3,
+  "icon": "⭐",
+  "passage": "Genesis 12–22",
+  "summary": "God called a man named Abram to leave his country, his relatives, and his father's house and go to a land that God would show him. God promised to make him a great nation and to bless all the families of the earth through him. Abram obeyed and set out with his wife Sarai and his nephew Lot, traveling to the land of Canaan. Years passed, and Abram and Sarai still had no children. God took Abram outside and told him to count the stars — his descendants would be just as many. Abram believed the Lord, and God counted it to him as righteousness. God changed his name to Abraham, meaning \"father of many nations,\" and changed Sarai's name to Sarah. When Abraham was one hundred years old, Sarah gave birth to the promised son, Isaac. Later God tested Abraham by asking him to offer Isaac on a mountain in the land of Moriah. Abraham obeyed, trusting that God would provide. At the last moment the angel of the Lord stopped him, and God provided a ram caught in a thicket to be offered instead.",
+  "scriptures": [
+    {
+      "ref": "Genesis 12:1-2",
+      "text": "Now the LORD had said unto Abram, Get thee out of thy country, and from thy kindred, and from thy father’s house, unto a land that I will shew thee: And I will make of thee a great nation, and I will bless thee, and make thy name great; and thou shalt be a blessing:"
+    },
+    {
+      "ref": "Genesis 15:6",
+      "text": "And he believed in the LORD; and he counted it to him for righteousness."
+    },
+    {
+      "ref": "Genesis 21:5",
+      "text": "And Abraham was an hundred years old, when his son Isaac was born unto him."
+    },
+    {
+      "ref": "Genesis 22:8",
+      "text": "And Abraham said, My son, God will provide himself a lamb for a burnt offering: so they went both of them together."
+    },
+    {
+      "ref": "Hebrews 11:8",
+      "text": "By faith Abraham, when he was called to go out into a place which he should after receive for an inheritance, obeyed; and he went out, not knowing whither he went."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Abraham (Abram)",
+      "description": "The man God called to follow Him to a new land; the father of the Israelite nation and an example of faith."
+    },
+    {
+      "name": "Sarah (Sarai)",
+      "description": "Abraham's wife, who gave birth to Isaac in her old age."
+    },
+    {
+      "name": "Isaac",
+      "description": "The son God promised to Abraham and Sarah."
+    },
+    {
+      "name": "Lot",
+      "description": "Abraham's nephew, who traveled with him to Canaan."
+    }
+  ],
+  "lesson": "Faith means trusting God's promises even when you can't see how they will come true. Abraham left the familiar behind because he believed God was faithful. He waited many years for the promised son and still trusted God when he was tested. God does not always explain the whole plan, but He always keeps His word — and He provides what we need at the right time.",
+  "reviewQuestions": [
+    {
+      "question": "What did God ask Abram to leave behind?",
+      "answer": "His country, his relatives, and his father's house, to go to a land God would show him (Genesis 12:1)."
+    },
+    {
+      "question": "What did God tell Abram to count to picture how many descendants he would have?",
+      "answer": "The stars (Genesis 15:5)."
+    },
+    {
+      "question": "What does the name Abraham mean?",
+      "answer": "\"Father of many nations\" (Genesis 17:5)."
+    },
+    {
+      "question": "How old was Abraham when Isaac was born?",
+      "answer": "One hundred years old (Genesis 21:5)."
+    },
+    {
+      "question": "What did God provide on Mount Moriah in place of Isaac?",
+      "answer": "A ram caught in a thicket by its horns (Genesis 22:13)."
+    }
+  ]
+}

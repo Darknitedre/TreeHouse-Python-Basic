@@ -1,0 +1,72 @@
+{
+  "id": "jonah",
+  "title": "Jonah and the Great Fish",
+  "testament": "OT",
+  "order": 7,
+  "icon": "🐋",
+  "passage": "Jonah 1–4",
+  "summary": "God told the prophet Jonah to go to Nineveh, a great but wicked city, and warn the people there. Instead, Jonah ran the other way. He went down to Joppa and boarded a ship headed for Tarshish. God sent a great storm, and the frightened sailors cast lots to find out who was to blame. The lot fell on Jonah. He told them to throw him into the sea, and when they did, the sea became calm. The Lord had prepared a great fish to swallow Jonah, and he was in the belly of the fish three days and three nights. There Jonah prayed, and the Lord spoke to the fish, and it spat Jonah out onto dry land. God gave Jonah a second chance, and this time he obeyed. He preached in Nineveh, and the people believed God — from the king to the least of them they fasted, put on sackcloth, and turned from their evil ways. God showed them mercy. But Jonah was angry that God spared Nineveh. God used a plant (a gourd), a worm, and a hot wind to teach Jonah that He cares about every person, even Israel's enemies.",
+  "scriptures": [
+    {
+      "ref": "Jonah 1:3",
+      "text": "But Jonah rose up to flee unto Tarshish from the presence of the LORD, and went down to Joppa; and he found a ship going to Tarshish: so he paid the fare thereof, and went down into it, to go with them unto Tarshish from the presence of the LORD."
+    },
+    {
+      "ref": "Jonah 1:17",
+      "text": "Now the LORD had prepared a great fish to swallow up Jonah. And Jonah was in the belly of the fish three days and three nights."
+    },
+    {
+      "ref": "Jonah 2:9",
+      "text": "But I will sacrifice unto thee with the voice of thanksgiving; I will pay that that I have vowed. Salvation is of the LORD."
+    },
+    {
+      "ref": "Jonah 3:10",
+      "text": "And God saw their works, that they turned from their evil way; and God repented of the evil, that he had said that he would do unto them; and he did it not."
+    },
+    {
+      "ref": "Jonah 4:2",
+      "text": "And he prayed unto the LORD, and said, I pray thee, O LORD, was not this my saying, when I was yet in my country? Therefore I fled before unto Tarshish: for I knew that thou art a gracious God, and merciful, slow to anger, and of great kindness, and repentest thee of the evil."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Jonah",
+      "description": "A prophet of Israel who ran from God's call, then obeyed, but struggled with God's mercy toward his enemies."
+    },
+    {
+      "name": "The sailors",
+      "description": "Men on the ship to Tarshish who came to fear the Lord after the storm."
+    },
+    {
+      "name": "The king of Nineveh",
+      "description": "He led his city in repentance, fasting, and prayer."
+    },
+    {
+      "name": "The people of Nineveh",
+      "description": "A wicked city that believed God's warning and turned from evil."
+    }
+  ],
+  "lesson": "You can't outrun God — and you don't need to, because He is gracious and gives second chances. God's mercy is bigger than our prejudices. He loved the people of Nineveh, and He loves the people we might find hard to love. When God calls us to do something, the best response is to obey the first time.",
+  "reviewQuestions": [
+    {
+      "question": "Where did God tell Jonah to go?",
+      "answer": "To Nineveh, that great city (Jonah 1:2)."
+    },
+    {
+      "question": "Where did Jonah try to go instead?",
+      "answer": "To Tarshish, on a ship from Joppa (Jonah 1:3)."
+    },
+    {
+      "question": "How long was Jonah in the belly of the great fish?",
+      "answer": "Three days and three nights (Jonah 1:17)."
+    },
+    {
+      "question": "How did the people of Nineveh respond to Jonah's message?",
+      "answer": "They believed God, proclaimed a fast, put on sackcloth, and turned from their evil way (Jonah 3:5–10)."
+    },
+    {
+      "question": "Why was Jonah angry at the end of the story?",
+      "answer": "Because God showed mercy and did not destroy Nineveh (Jonah 4:1–2)."
+    }
+  ]
+}

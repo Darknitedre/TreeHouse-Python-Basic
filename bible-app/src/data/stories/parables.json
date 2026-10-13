@@ -1,0 +1,76 @@
+{
+  "id": "parables",
+  "title": "The Parables of Jesus",
+  "testament": "NT",
+  "order": 2,
+  "icon": "🐑",
+  "passage": "Matthew 13; Luke 10, 15",
+  "summary": "Jesus often taught using parables — simple stories from everyday life that reveal truths about God's kingdom. In the Parable of the Sower, a farmer scatters seed that falls on a path, on rocky ground, among thorns, and on good ground; only the seed on good ground produces a harvest. The seed is the word of God, and the good ground is a heart that hears it and holds on to it. In the Parable of the Good Samaritan, a man is beaten by robbers and left half dead. A priest and a Levite pass by on the other side, but a Samaritan — someone the listeners looked down on — stops, bandages his wounds, and pays for his care. Jesus said, \"Go, and do thou likewise.\" In the Parable of the Lost Sheep, a shepherd leaves ninety-nine sheep to search for one that is lost, and rejoices when he finds it. In the Parable of the Prodigal Son, a young man demands his inheritance, wastes it, and ends up feeding pigs. He returns home hoping to be a servant, but his father runs to meet him, embraces him, and throws a feast, because his son \"was lost, and is found.\"",
+  "scriptures": [
+    {
+      "ref": "Matthew 13:23",
+      "text": "But he that received seed into the good ground is he that heareth the word, and understandeth it; which also beareth fruit, and bringeth forth, some an hundredfold, some sixty, some thirty."
+    },
+    {
+      "ref": "Luke 10:36-37",
+      "text": "Which now of these three, thinkest thou, was neighbour unto him that fell among the thieves? And he said, He that shewed mercy on him. Then said Jesus unto him, Go, and do thou likewise."
+    },
+    {
+      "ref": "Luke 15:4",
+      "text": "What man of you, having an hundred sheep, if he lose one of them, doth not leave the ninety and nine in the wilderness, and go after that which is lost, until he find it?"
+    },
+    {
+      "ref": "Luke 15:20",
+      "text": "And he arose, and came to his father. But when he was yet a great way off, his father saw him, and had compassion, and ran, and fell on his neck, and kissed him."
+    },
+    {
+      "ref": "Luke 15:24",
+      "text": "For this my son was dead, and is alive again; he was lost, and is found. And they began to be merry."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Jesus",
+      "description": "The teacher who told these stories to show what God is like."
+    },
+    {
+      "name": "The sower",
+      "description": "A farmer whose seed fell on four kinds of ground."
+    },
+    {
+      "name": "The Good Samaritan",
+      "description": "A traveler who showed mercy to a wounded stranger when others passed by."
+    },
+    {
+      "name": "The shepherd",
+      "description": "He left the ninety and nine to find the one lost sheep."
+    },
+    {
+      "name": "The prodigal son and his father",
+      "description": "A son who wasted everything, and a father who welcomed him home with open arms."
+    }
+  ],
+  "lesson": "Jesus' parables show us God's heart. God is like the shepherd who searches for the lost and the father who runs to welcome home a child who has wandered. He wants His word to take root in our hearts and bear fruit. And He calls us to love our neighbor — which means anyone in need, not just people who are like us.",
+  "reviewQuestions": [
+    {
+      "question": "In the Parable of the Sower, what does the seed represent?",
+      "answer": "The word of God (Luke 8:11)."
+    },
+    {
+      "question": "Who passed by the wounded man before the Samaritan stopped?",
+      "answer": "A priest and a Levite (Luke 10:31–32)."
+    },
+    {
+      "question": "What did Jesus tell the lawyer to do after the story of the Good Samaritan?",
+      "answer": "\"Go, and do thou likewise\" (Luke 10:37)."
+    },
+    {
+      "question": "How many sheep did the shepherd leave to find the lost one?",
+      "answer": "Ninety and nine (99) (Luke 15:4)."
+    },
+    {
+      "question": "What job did the prodigal son take after he ran out of money?",
+      "answer": "Feeding pigs (swine) in the fields (Luke 15:15)."
+    }
+  ]
+}

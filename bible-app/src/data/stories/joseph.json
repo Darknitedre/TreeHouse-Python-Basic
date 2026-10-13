@@ -1,0 +1,72 @@
+{
+  "id": "joseph",
+  "title": "Joseph and His Brothers",
+  "testament": "OT",
+  "order": 4,
+  "icon": "🧥",
+  "passage": "Genesis 37–50",
+  "summary": "Jacob loved his son Joseph more than his other children and gave him a coat of many colours. Joseph also had dreams that his family would one day bow down to him. His older brothers grew jealous and hated him. One day, far from home, they threw him into a pit and then sold him to traders for twenty pieces of silver. They brought Joseph's coat, dipped in goat's blood, back to their father, who believed a wild animal had killed him. In Egypt, Joseph was sold to Potiphar, an officer of Pharaoh. The Lord was with Joseph, and he did well — until Potiphar's wife falsely accused him and he was thrown into prison. Even there God was with him. Joseph interpreted the dreams of Pharaoh's butler and baker, and two years later he was called to interpret Pharaoh's own dreams: seven years of plenty would be followed by seven years of famine. Pharaoh put Joseph in charge of all Egypt to prepare. When the famine came, Joseph's brothers traveled to Egypt to buy grain and bowed before him without recognizing him. After testing them, Joseph revealed who he was, forgave them, and brought his whole family to live in Egypt.",
+  "scriptures": [
+    {
+      "ref": "Genesis 37:3",
+      "text": "Now Israel loved Joseph more than all his children, because he was the son of his old age: and he made him a coat of many colours."
+    },
+    {
+      "ref": "Genesis 39:2",
+      "text": "And the LORD was with Joseph, and he was a prosperous man; and he was in the house of his master the Egyptian."
+    },
+    {
+      "ref": "Genesis 41:16",
+      "text": "And Joseph answered Pharaoh, saying, It is not in me: God shall give Pharaoh an answer of peace."
+    },
+    {
+      "ref": "Genesis 50:20",
+      "text": "But as for you, ye thought evil against me; but God meant it unto good, to bring to pass, as it is this day, to save much people alive."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Joseph",
+      "description": "Jacob's favored son, sold into slavery by his brothers, who became ruler over Egypt under Pharaoh."
+    },
+    {
+      "name": "Jacob (Israel)",
+      "description": "Joseph's father, who grieved for years thinking Joseph was dead."
+    },
+    {
+      "name": "Joseph's brothers",
+      "description": "Jealous of Joseph, they sold him — but later were forgiven by him. Reuben and Judah tried to spare his life."
+    },
+    {
+      "name": "Potiphar",
+      "description": "An Egyptian officer of Pharaoh who bought Joseph as a servant."
+    },
+    {
+      "name": "Pharaoh",
+      "description": "The king of Egypt, who made Joseph his second-in-command."
+    }
+  ],
+  "lesson": "God can take what others mean for evil and use it for good. Joseph was betrayed, falsely accused, and forgotten, yet he stayed faithful and kept doing his work with integrity. When he finally had the power to take revenge, he chose forgiveness instead. When life is unfair, we can trust that God is still at work — and we can choose to forgive.",
+  "reviewQuestions": [
+    {
+      "question": "What special gift did Jacob give Joseph?",
+      "answer": "A coat of many colours (Genesis 37:3)."
+    },
+    {
+      "question": "For how much did the brothers sell Joseph?",
+      "answer": "Twenty pieces of silver (Genesis 37:28)."
+    },
+    {
+      "question": "What did Pharaoh's dreams mean?",
+      "answer": "Seven years of plenty would be followed by seven years of famine (Genesis 41:29–30)."
+    },
+    {
+      "question": "Why did Joseph's brothers come to Egypt?",
+      "answer": "To buy grain during the famine (Genesis 42:1–3)."
+    },
+    {
+      "question": "What did Joseph tell his brothers about the evil they had done to him?",
+      "answer": "\"Ye thought evil against me; but God meant it unto good\" (Genesis 50:20)."
+    }
+  ]
+}

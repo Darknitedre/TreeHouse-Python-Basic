@@ -1,0 +1,64 @@
+{
+  "id": "noah",
+  "title": "Noah and the Flood",
+  "testament": "OT",
+  "order": 2,
+  "icon": "🌈",
+  "passage": "Genesis 6–9",
+  "summary": "As people multiplied on the earth, wickedness spread everywhere, and God was grieved. But Noah found grace in the eyes of the Lord. Noah was a righteous man who walked with God. God told Noah that a great flood was coming, and He gave him exact instructions to build an ark of gopher wood. Noah obeyed and did everything God commanded. When the ark was finished, Noah went in with his wife, his three sons — Shem, Ham, and Japheth — and their wives, eight people in all, along with the animals God sent. God shut them in. Rain fell for forty days and forty nights, and the waters covered even the high mountains. The ark finally came to rest on the mountains of Ararat. Noah sent out a raven and then a dove; when the dove returned with an olive leaf, Noah knew the waters were going down. After leaving the ark, Noah built an altar and worshiped God. God promised never again to destroy the earth with a flood, and He set the rainbow in the clouds as the sign of His covenant.",
+  "scriptures": [
+    {
+      "ref": "Genesis 6:8",
+      "text": "But Noah found grace in the eyes of the LORD."
+    },
+    {
+      "ref": "Genesis 6:22",
+      "text": "Thus did Noah; according to all that God commanded him, so did he."
+    },
+    {
+      "ref": "Genesis 7:12",
+      "text": "And the rain was upon the earth forty days and forty nights."
+    },
+    {
+      "ref": "Genesis 9:13",
+      "text": "I do set my bow in the cloud, and it shall be for a token of a covenant between me and the earth."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Noah",
+      "description": "A righteous man who walked with God and obeyed Him by building the ark."
+    },
+    {
+      "name": "Noah's family",
+      "description": "His wife, his sons Shem, Ham, and Japheth, and their wives — saved with him in the ark."
+    },
+    {
+      "name": "God",
+      "description": "The holy Judge of sin, who also showed mercy and made a covenant promise."
+    }
+  ],
+  "lesson": "Noah obeyed God even when it must have looked foolish to everyone around him. Faithfulness means doing what God says, step by step, even before you can see the result. God takes sin seriously, but He also provides a way of rescue for those who trust Him. Every rainbow is a reminder that God keeps His promises.",
+  "reviewQuestions": [
+    {
+      "question": "Why was Noah spared from the flood?",
+      "answer": "Noah found grace in the eyes of the Lord; he was a righteous man who walked with God (Genesis 6:8–9)."
+    },
+    {
+      "question": "How many days and nights did it rain?",
+      "answer": "Forty days and forty nights (Genesis 7:12)."
+    },
+    {
+      "question": "How many people were saved in the ark?",
+      "answer": "Eight — Noah, his wife, his three sons, and their wives (Genesis 7:13; 1 Peter 3:20)."
+    },
+    {
+      "question": "What did the dove bring back to Noah?",
+      "answer": "An olive leaf, showing the waters were going down (Genesis 8:11)."
+    },
+    {
+      "question": "What sign did God give as His promise never to flood the whole earth again?",
+      "answer": "The rainbow in the clouds (Genesis 9:13)."
+    }
+  ]
+}

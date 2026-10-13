@@ -1,0 +1,76 @@
+{
+  "id": "pauls-journeys",
+  "title": "Paul's Journeys",
+  "testament": "NT",
+  "order": 4,
+  "icon": "⛵",
+  "passage": "Acts 9, 13–28",
+  "summary": "Saul of Tarsus was a strict Pharisee who persecuted the followers of Jesus. On the road to Damascus a light from heaven flashed around him, and he heard a voice: \"Saul, Saul, why persecutest thou me?\" It was Jesus. Blinded, Saul was led into Damascus, where a disciple named Ananias laid hands on him and his sight returned. Saul was baptized and began preaching that Jesus is the Son of God. Saul, also called Paul, became the great missionary to the Gentiles. On his first journey he traveled with Barnabas through Cyprus and Galatia. On his second journey, with Silas, he went into Europe. In Philippi, Lydia believed, and Paul and Silas were beaten and jailed — but at midnight they prayed and sang praises, an earthquake opened the doors, and the jailer and his household believed. Paul also preached in Thessalonica, Athens, and Corinth. On his third journey he stayed about three years at Ephesus. Arrested in Jerusalem, Paul appealed to Caesar and was sent to Rome as a prisoner. He survived a shipwreck on the island of Melita, and in Rome he kept preaching the kingdom of God. Along the way he wrote letters that became much of the New Testament.",
+  "scriptures": [
+    {
+      "ref": "Acts 9:3-4",
+      "text": "And as he journeyed, he came near Damascus: and suddenly there shined round about him a light from heaven: And he fell to the earth, and heard a voice saying unto him, Saul, Saul, why persecutest thou me?"
+    },
+    {
+      "ref": "Acts 16:25-26",
+      "text": "And at midnight Paul and Silas prayed, and sang praises unto God: and the prisoners heard them. And suddenly there was a great earthquake, so that the foundations of the prison were shaken: and immediately all the doors were opened, and every one’s bands were loosed."
+    },
+    {
+      "ref": "Acts 16:31",
+      "text": "And they said, Believe on the Lord Jesus Christ, and thou shalt be saved, and thy house."
+    },
+    {
+      "ref": "Philippians 4:13",
+      "text": "I can do all things through Christ which strengtheneth me."
+    },
+    {
+      "ref": "2 Timothy 4:7",
+      "text": "I have fought a good fight, I have finished my course, I have kept the faith:"
+    }
+  ],
+  "characters": [
+    {
+      "name": "Paul (Saul of Tarsus)",
+      "description": "A former persecutor of Christians who met Jesus and became a missionary and letter-writer."
+    },
+    {
+      "name": "Barnabas",
+      "description": "\"Son of consolation\" — Paul's encourager and partner on his first journey."
+    },
+    {
+      "name": "Silas",
+      "description": "Paul's companion on his second journey, who sang with him in the Philippian jail."
+    },
+    {
+      "name": "Timothy",
+      "description": "A young believer who joined Paul and became like a son to him."
+    },
+    {
+      "name": "Ananias",
+      "description": "The disciple in Damascus whom God sent to restore Saul's sight."
+    }
+  ],
+  "lesson": "No one is beyond the reach of God's grace — even someone who once fought against Jesus. Once Paul met Christ, he gave everything to share the good news, through beatings, prison, and shipwreck. He learned to praise God in hard places and to keep going until he could say, \"I have finished my course.\" God can use your story too, wherever you have been.",
+  "reviewQuestions": [
+    {
+      "question": "What was Paul's name before he was known as Paul?",
+      "answer": "Saul (Acts 13:9)."
+    },
+    {
+      "question": "Where was Saul going when Jesus spoke to him from heaven?",
+      "answer": "To Damascus (Acts 9:3)."
+    },
+    {
+      "question": "Who traveled with Paul on his first missionary journey?",
+      "answer": "Barnabas (Acts 13:2–4)."
+    },
+    {
+      "question": "What were Paul and Silas doing at midnight in the Philippian jail?",
+      "answer": "Praying and singing praises to God (Acts 16:25)."
+    },
+    {
+      "question": "On what island was Paul shipwrecked on his way to Rome?",
+      "answer": "Melita (Malta) (Acts 28:1)."
+    }
+  ]
+}

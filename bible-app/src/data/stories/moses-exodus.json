@@ -1,0 +1,72 @@
+{
+  "id": "moses-exodus",
+  "title": "Moses and the Exodus",
+  "testament": "OT",
+  "order": 5,
+  "icon": "🌊",
+  "passage": "Exodus 2–20",
+  "summary": "The Israelites had become slaves in Egypt, and Pharaoh ordered that their baby boys be killed. One mother hid her son in a basket among the reeds by the river, and Pharaoh's daughter found him, adopted him, and named him Moses. Years later, Moses fled Egypt and became a shepherd in Midian. There God spoke to him from a bush that burned but was not consumed, and sent him back to Egypt to bring His people out. God told Moses His name: \"I AM THAT I AM.\" With his brother Aaron, Moses told Pharaoh, \"Let my people go.\" Pharaoh refused again and again, so God sent ten plagues on Egypt. The last plague took the firstborn of Egypt, but the Israelites were spared by putting the blood of a lamb on their doorposts — the first Passover. Pharaoh finally let them go, then changed his mind and chased them. God parted the Red Sea so Israel crossed on dry ground, and the waters returned over Pharaoh's army. In the wilderness God fed them with manna, and at Mount Sinai He gave them the Ten Commandments.",
+  "scriptures": [
+    {
+      "ref": "Exodus 3:14",
+      "text": "And God said unto Moses, I AM THAT I AM: and he said, Thus shalt thou say unto the children of Israel, I AM hath sent me unto you."
+    },
+    {
+      "ref": "Exodus 5:1",
+      "text": "And afterward Moses and Aaron went in, and told Pharaoh, Thus saith the LORD God of Israel, Let my people go, that they may hold a feast unto me in the wilderness."
+    },
+    {
+      "ref": "Exodus 12:13",
+      "text": "And the blood shall be to you for a token upon the houses where ye are: and when I see the blood, I will pass over you, and the plague shall not be upon you to destroy you, when I smite the land of Egypt."
+    },
+    {
+      "ref": "Exodus 14:21",
+      "text": "And Moses stretched out his hand over the sea; and the LORD caused the sea to go back by a strong east wind all that night, and made the sea dry land, and the waters were divided."
+    },
+    {
+      "ref": "Exodus 20:3",
+      "text": "Thou shalt have no other gods before me."
+    }
+  ],
+  "characters": [
+    {
+      "name": "Moses",
+      "description": "An Israelite raised in Pharaoh's household, whom God called to lead His people out of slavery."
+    },
+    {
+      "name": "Aaron",
+      "description": "Moses' older brother, who spoke for Moses before Pharaoh."
+    },
+    {
+      "name": "Miriam",
+      "description": "Moses' sister, who led the women in a song of praise after crossing the Red Sea."
+    },
+    {
+      "name": "Pharaoh",
+      "description": "The stubborn king of Egypt who refused to let Israel go."
+    }
+  ],
+  "lesson": "God hears the cries of people who are suffering, and He keeps His promises. Moses felt unqualified, but God said, \"I will be with thee.\" God doesn't need us to be impressive — He needs us to be willing. The Passover also points forward to Jesus, the Lamb of God, whose sacrifice brings us out of slavery to sin.",
+  "reviewQuestions": [
+    {
+      "question": "How did God first speak to Moses?",
+      "answer": "From a bush that burned but was not consumed (Exodus 3:2–4)."
+    },
+    {
+      "question": "What name did God tell Moses to give the Israelites?",
+      "answer": "\"I AM THAT I AM\" — tell them \"I AM hath sent me unto you\" (Exodus 3:14)."
+    },
+    {
+      "question": "How many plagues did God send on Egypt?",
+      "answer": "Ten (Exodus 7–12)."
+    },
+    {
+      "question": "What did the Israelites put on their doorposts at the first Passover?",
+      "answer": "The blood of a lamb (Exodus 12:7, 13)."
+    },
+    {
+      "question": "On which mountain did God give the Ten Commandments?",
+      "answer": "Mount Sinai (Exodus 19:20; 20:1–17)."
+    }
+  ]
+}
