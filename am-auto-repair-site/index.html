@@ -45,11 +45,11 @@
 
   /* Hero */
   .hero{position:relative;background:var(--navy-2);color:#fff;overflow:hidden}
-  .hero-img{position:absolute;inset:0 0 0 40%;background:url(images/hero-mechanic-van.jpg) left center/cover no-repeat}
-  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy-2) 0%,rgba(20,26,35,.6) 10%,rgba(20,26,35,0) 26%)}
+  .hero-img{position:absolute;inset:0 0 0 47%;background:url(images/hero-mechanic-van.jpg) left center/cover no-repeat}
+  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy-2) 0%,rgba(20,26,35,.55) 6%,rgba(20,26,35,0) 18%)}
   .hero .wrap{position:relative;min-height:500px;display:flex;align-items:center;padding-top:48px;padding-bottom:110px}
   .hero-copy{max-width:600px}
-  .hero h1{font-size:clamp(34px,4.2vw,54px);font-weight:900}
+  .hero h1{font-size:clamp(34px,3.6vw,52px);font-weight:900}
   .hero h1 span{color:var(--red)}
   .hero .places{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(20px,2.4vw,28px);margin:14px 0 12px}
   .hero .places i{color:var(--red);font-style:normal;margin:0 6px}
@@ -153,6 +153,54 @@
   footer a{text-decoration:none}
   footer a:hover{color:#fff}
 
+  /* Driveway photo section */
+  .drive-grid{display:grid;grid-template-columns:1.15fr 1fr;gap:48px;align-items:center}
+  .drive-photos{display:grid;grid-template-columns:1.4fr 1fr;gap:12px}
+  .drive-photos img{width:100%;height:340px;object-fit:cover;border-radius:var(--radius)}
+  .drive-photos img:first-child{object-position:12% center}
+  .drive-photos img:last-child{object-position:40% center}
+  .eyebrow{color:var(--red);font-weight:800;text-transform:uppercase;letter-spacing:.08em;font-size:13px}
+  .driveway h2{font-size:clamp(26px,3vw,34px);font-weight:900;margin:8px 0 12px}
+  .driveway p{color:var(--muted);margin:0}
+  .review-empty{grid-column:1/-1;border:2px dashed var(--line);border-radius:var(--radius);padding:28px;text-align:center;color:var(--muted)}
+  .review-empty b{display:block;color:var(--ink);font-size:17px;margin-bottom:6px}
+
+  /* Quote wizard */
+  .qw{position:fixed;inset:0;z-index:100;background:rgba(17,24,39,.6);display:none;align-items:center;justify-content:center;padding:16px}
+  .qw.open{display:flex}
+  .qw-box{background:#fff;border-radius:14px;width:100%;max-width:560px;max-height:calc(100vh - 32px);overflow:auto;box-shadow:0 20px 60px rgba(0,0,0,.35)}
+  .qw-head{display:flex;align-items:center;gap:12px;padding:18px 22px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:1}
+  .qw-head h2{font-size:20px;font-weight:900}
+  .qw-close{margin-left:auto;background:none;border:0;font-size:28px;line-height:1;cursor:pointer;color:var(--muted);padding:4px 8px}
+  .qw-prog{display:flex;gap:6px;padding:14px 22px 0}
+  .qw-prog span{flex:1;height:5px;border-radius:3px;background:var(--line)}
+  .qw-prog span.on{background:var(--red)}
+  .qw-step{display:none;padding:18px 22px 22px}
+  .qw-step.on{display:block}
+  .qw-step h3{font-size:18px;font-weight:800;margin-bottom:4px}
+  .qw-step .sub{color:var(--muted);font-size:14px;margin:0 0 16px}
+  .qw label{display:block;font-weight:600;font-size:13px;margin:12px 0 6px}
+  .qw input,.qw select,.qw textarea{width:100%;border:1px solid #cfd4db;border-radius:8px;padding:12px;font:inherit;font-size:16px;background:#fff;color:var(--ink)}
+  .qw textarea{min-height:90px;resize:vertical}
+  .qw input:focus,.qw select:focus,.qw textarea:focus{outline:2px solid var(--red);outline-offset:1px;border-color:transparent}
+  .qw .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .qw .row label{margin-top:12px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chips label{margin:0;display:inline-flex;align-items:center;border:1.5px solid #cfd4db;border-radius:999px;padding:9px 14px;cursor:pointer;font-size:14px;font-weight:600;user-select:none}
+  .chips input{position:absolute;opacity:0;width:1px;height:1px}
+  .chips input:checked+span{color:#fff}
+  .chips label:has(input:checked){background:var(--red);border-color:var(--red);color:#fff}
+  .chips label:has(input:focus-visible){outline:2px solid var(--navy);outline-offset:2px}
+  .qw-err{color:var(--red);font-size:13px;font-weight:600;margin-top:10px;min-height:1em}
+  .qw-nav{display:flex;gap:10px;margin-top:18px}
+  .qw-nav .btn{flex:1}
+  .btn-plain{background:var(--soft);color:var(--ink)}
+  .summary{background:var(--soft);border-radius:8px;padding:14px;font-size:14px;white-space:pre-wrap;font-family:inherit;margin:0;max-height:220px;overflow:auto}
+  .send-big{width:100%;margin-top:14px;font-size:16px;padding:16px}
+  .send-alt{display:flex;gap:10px;margin-top:10px}
+  .send-alt .btn{flex:1;text-transform:none;font-family:Inter,sans-serif;font-weight:700;font-size:14px;padding:12px}
+  .note{font-size:12px;color:var(--muted);margin-top:12px}
+
   /* Mobile sticky call bar */
   .callbar{display:none}
 
@@ -168,7 +216,7 @@
     .steps{grid-template-columns:repeat(2,1fr)}
     .step:nth-child(2){border-right:0}
     .step:nth-child(-n+2){border-bottom:1px solid var(--line)}
-    .two,.area-grid{grid-template-columns:1fr}
+    .two,.area-grid,.drive-grid{grid-template-columns:1fr}
   }
   @media (max-width:760px){
     .nav .actions .book{display:none}
@@ -189,6 +237,9 @@
     .promo-img::after{background:linear-gradient(180deg,rgba(28,36,48,0) 40%,var(--navy))}
     .cta .btns{margin-left:0}
     section{padding:48px 0}
+    .drive-photos img{height:220px}
+    .qw{padding:0;align-items:flex-end}
+    .qw-box{border-radius:14px 14px 0 0;max-height:94vh}
     .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;box-shadow:0 -4px 16px rgba(0,0,0,.15)}
     .callbar a{padding:15px;text-align:center;font-weight:800;text-decoration:none;font-family:Montserrat,sans-serif}
     .callbar .c1{background:var(--navy);color:#fff}
@@ -241,7 +292,7 @@
     </nav>
     <div class="actions">
       <a class="btn btn-red" href="tel:+13018066217"><svg class="ico"><use href="#i-phone"/></svg>(301) 806-6217</a>
-      <a class="btn btn-outline book" href="#quote"><svg class="ico"><use href="#i-cal"/></svg>Book Appointment</a>
+      <a class="btn btn-outline book" href="#get-quote"><svg class="ico"><use href="#i-cal"/></svg>Book Appointment</a>
     </div>
   </div>
 </header>
@@ -283,11 +334,11 @@
           <input name="model" placeholder="Model" required aria-label="Model">
           <select class="svc-sel" name="service" required aria-label="What service do you need?">
             <option value="">What service do you need?</option>
-            <option>Brake Pads &amp; Rotors</option><option>Diagnostics / Check Engine</option><option>Battery Replacement</option><option>Starter Replacement</option><option>Alternator Replacement</option><option>Tune-Up</option><option>Suspension Repair</option><option>No-Start Diagnosis</option><option>Oil Change</option><option>Something else</option>
+            <option>Brake Pads &amp; Rotors</option><option>Diagnostics</option><option>Battery Replacement</option><option>Starter Replacement</option><option>Alternator Replacement</option><option>Tune-Up</option><option>Suspension Repair</option><option>No-Start Diagnosis</option><option>Oil Change</option><option>Something else</option>
           </select>
           <button class="btn btn-red" type="submit">Get My Quote <svg class="ico"><use href="#i-arrow"/></svg></button>
           <div class="secure"><svg class="ico" style="width:14px;height:14px"><use href="#i-lock"/></svg>Your information is safe and secure.</div>
-          <div class="form-msg" id="formMsg">Thanks! We got your request and will text or call you shortly with your quote. Need it faster? Call (301) 806-6217.</div>
+          
         </form>
       </div>
     </div>
@@ -309,16 +360,37 @@
   <!-- SERVICES -->
   <section class="services" id="services">
     <div class="wrap">
-      <div class="sec-head"><h2>Popular Services</h2><p>From routine maintenance to complex repairs, we've got you covered.</p><a class="more" href="#quote">Get a quote →</a></div>
+      <div class="sec-head"><h2>Popular Services</h2><p>From routine maintenance to complex repairs, we've got you covered.</p><a class="more" href="#get-quote">Get a quote →</a></div>
       <div class="svc-grid">
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-brake"/></svg></span><div><h3>Brake Pads &amp; Rotors</h3><p>Squeaks, grinding, soft pedal</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-engine"/></svg></span><div><h3>Diagnostics</h3><p>Check engine light &amp; scans</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-gear"/></svg></span><div><h3>Starter Replacement</h3><p>Clicking or slow crank</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-bolt"/></svg></span><div><h3>Alternator Replacement</h3><p>Dim lights, dying battery</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-battery"/></svg></span><div><h3>Battery Replacement</h3><p>Testing &amp; install on-site</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-oil"/></svg></span><div><h3>Tune-Ups</h3><p>Plugs, filters, fluids</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-spring"/></svg></span><div><h3>Suspension Repair</h3><p>Shocks, struts, control arms</p></div></a>
-        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-key"/></svg></span><div><h3>No-Start Diagnosis</h3><p>Car won't start? We'll find out why</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Brake Pads &amp; Rotors" style="text-decoration:none"><span class="chip"><svg><use href="#i-brake"/></svg></span><div><h3>Brake Pads &amp; Rotors</h3><p>Squeaks, grinding, soft pedal</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Diagnostics" style="text-decoration:none"><span class="chip"><svg><use href="#i-engine"/></svg></span><div><h3>Diagnostics</h3><p>Check engine light &amp; scans</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Starter Replacement" style="text-decoration:none"><span class="chip"><svg><use href="#i-gear"/></svg></span><div><h3>Starter Replacement</h3><p>Clicking or slow crank</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Alternator Replacement" style="text-decoration:none"><span class="chip"><svg><use href="#i-bolt"/></svg></span><div><h3>Alternator Replacement</h3><p>Dim lights, dying battery</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Battery Replacement" style="text-decoration:none"><span class="chip"><svg><use href="#i-battery"/></svg></span><div><h3>Battery Replacement</h3><p>Testing &amp; install on-site</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Tune-Up" style="text-decoration:none"><span class="chip"><svg><use href="#i-oil"/></svg></span><div><h3>Tune-Ups</h3><p>Plugs, filters, fluids</p></div></a>
+        <a class="svc" href="#get-quote" data-service="Suspension Repair" style="text-decoration:none"><span class="chip"><svg><use href="#i-spring"/></svg></span><div><h3>Suspension Repair</h3><p>Shocks, struts, control arms</p></div></a>
+        <a class="svc" href="#get-quote" data-service="No-Start Diagnosis" style="text-decoration:none"><span class="chip"><svg><use href="#i-key"/></svg></span><div><h3>No-Start Diagnosis</h3><p>Car won't start? We'll find out why</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- WE COME TO YOU -->
+  <section class="driveway">
+    <div class="wrap drive-grid">
+      <div class="drive-photos">
+        <img src="images/van-driveway.jpg" alt="AM Auto Repair Mobile work van parked in a customer's driveway with its tool shelves open" loading="lazy">
+        <img src="images/mechanic-battery-office.jpg" alt="AM Auto Repair Mobile mechanic installing a new battery in an office parking lot" loading="lazy">
+      </div>
+      <div>
+        <span class="eyebrow">Your driveway is our shop</span>
+        <h2>A Fully Equipped Shop on Wheels</h2>
+        <p>Our van carries the tools, scanners and parts to handle most repairs on the spot, so you don't need a tow, a ride or a waiting room. We'll meet you at home, at work or in the office parking lot.</p>
+        <ul class="checks">
+          <li>Same-week appointments, often same-day</li>
+          <li>Upfront quote before any work starts</li>
+          <li>Quality parts, done right the first time</li>
+        </ul>
+        <a class="btn btn-red" style="margin-top:18px" href="#get-quote">Request a Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
       </div>
     </div>
   </section>
@@ -334,7 +406,7 @@
         <p>Safe stops. A smoother ride. Right at your location.</p>
       </div>
       <div>
-        <a class="btn btn-red" href="#quote">Get Your Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a class="btn btn-red" href="#get-quote">Get Your Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
         <div class="fine">Cannot be combined with other offers.<br>Limited time only.</div>
       </div>
     </div>
@@ -354,12 +426,8 @@
       </div>
       <div>
         <h2 class="small">What Our Customers Say</h2>
-        <!-- TODO: replace these sample reviews with real customer reviews (e.g. from Google) before launch -->
-        <div class="reviews">
-          <div class="review"><div class="stars">★★★★★</div><blockquote>"Super convenient and professional! AM Auto Repair came to my house, fixed my brakes, and saved me so much time. Highly recommend!"</blockquote><b>Jessica R.</b><small>Gaithersburg, MD</small></div>
-          <div class="review"><div class="stars">★★★★★</div><blockquote>"Honest, knowledgeable, and arrived right on time. Will definitely use again!"</blockquote><b>Marcus T.</b><small>Silver Spring, MD</small></div>
-          <div class="review"><div class="stars">★★★★★</div><blockquote>"Best mechanic service I've ever used. Fast, fair pricing, and super convenient."</blockquote><b>Danielle K.</b><small>Arlington, VA</small></div>
-        </div>
+        <!-- Reviews are filled in from the REVIEWS list in the script at the bottom of this file. -->
+        <div class="reviews" id="reviewList"></div>
       </div>
     </div>
   </section>
@@ -415,7 +483,7 @@
     <img src="images/logo.png" alt="AM Auto Repair Mobile">
     <div><h2>Ready to Get Started?</h2><p>Get a fast, no-obligation quote and let us come to you.</p></div>
     <div class="btns">
-      <a class="btn btn-red" href="#quote">Get My Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-red" href="#get-quote">Get My Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
       <a class="btn btn-ghost" href="tel:+13018066217"><svg class="ico"><use href="#i-phone"/></svg>(301) 806-6217</a>
     </div>
   </div>
@@ -427,26 +495,195 @@
   </div>
 </footer>
 
+<!-- QUOTE REQUEST WIZARD: collects vehicle + service + contact, then texts it to the shop -->
+<div class="qw" id="qw" role="dialog" aria-modal="true" aria-labelledby="qwTitle">
+  <div class="qw-box">
+    <div class="qw-head"><h2 id="qwTitle">Get Your Free Quote</h2><button class="qw-close" type="button" aria-label="Close" data-close>&times;</button></div>
+    <div class="qw-prog"><span></span><span></span><span></span><span></span></div>
+    <form id="qwForm" novalidate>
+      <div class="qw-step" data-step="1">
+        <h3>1. Your vehicle</h3>
+        <p class="sub">Tell us what we'll be working on.</p>
+        <div class="row">
+          <div><label for="qYear">Year *</label><select id="qYear" name="year" required></select></div>
+          <div><label for="qMake">Make *</label><select id="qMake" name="make" required></select></div>
+        </div>
+        <div class="row">
+          <div><label for="qModel">Model *</label><input id="qModel" name="model" placeholder="e.g. Camry" required></div>
+          <div><label for="qMiles">Mileage</label><input id="qMiles" name="miles" inputmode="numeric" placeholder="e.g. 85,000"></div>
+        </div>
+        <label for="qZip">ZIP code where the car is *</label>
+        <input id="qZip" name="zip" inputmode="numeric" maxlength="5" placeholder="e.g. 20910" required pattern="[0-9]{5}">
+      </div>
+
+      <div class="qw-step" data-step="2">
+        <h3>2. What do you need?</h3>
+        <p class="sub">Pick one or more services.</p>
+        <div class="chips" id="qServices"></div>
+        <label for="qProblem">Describe the problem (optional)</label>
+        <textarea id="qProblem" name="problem" placeholder="e.g. Grinding noise when I brake, front left side"></textarea>
+        <label for="qDrive">Can the car be driven?</label>
+        <select id="qDrive" name="drivable"><option value="">Choose one</option><option>Yes</option><option>No</option><option>Not sure</option></select>
+      </div>
+
+      <div class="qw-step" data-step="3">
+        <h3>3. How do we reach you?</h3>
+        <p class="sub">We'll text or call you back with your quote.</p>
+        <div class="row">
+          <div><label for="qName">Your name *</label><input id="qName" name="name" autocomplete="name" required></div>
+          <div><label for="qPhone">Phone *</label><input id="qPhone" name="phone" type="tel" autocomplete="tel" placeholder="(301) 555-0123" required></div>
+        </div>
+        <label for="qWhere">Where will the car be?</label>
+        <select id="qWhere" name="where"><option value="">Choose one</option><option>Home</option><option>Work / Office</option><option>Other</option></select>
+        <div class="row">
+          <div><label for="qDay">Preferred day</label><input id="qDay" name="day" type="date"></div>
+          <div><label for="qTime">Preferred time</label><select id="qTime" name="time"><option value="">Any time</option><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+        </div>
+      </div>
+
+      <div class="qw-step" data-step="4">
+        <h3>4. Send your request</h3>
+        <p class="sub">Here's what we'll get. Tap the button to text it to AM Auto Repair Mobile.</p>
+        <pre class="summary" id="qSummary"></pre>
+        <a class="btn btn-red send-big" id="qSms" href="#"><svg class="ico"><use href="#i-phone"/></svg>Text My Request</a>
+        <div class="send-alt">
+          <button class="btn btn-plain" type="button" id="qCopy">Copy request</button>
+          <a class="btn btn-outline" href="tel:+13018066217">Call (301) 806-6217</a>
+        </div>
+        <p class="note">On a computer? Tap "Copy request" and text it to (301) 806-6217 from your phone, or just give us a call.</p>
+      </div>
+
+      <div class="qw-err" id="qErr" role="alert" style="padding:0 22px"></div>
+      <div class="qw-nav" style="padding:0 22px 22px">
+        <button class="btn btn-plain" type="button" id="qBack">Back</button>
+        <button class="btn btn-red" type="button" id="qNext">Next <svg class="ico"><use href="#i-arrow"/></svg></button>
+      </div>
+    </form>
+  </div>
+</div>
+
 <div class="callbar">
   <a class="c1" href="tel:+13018066217">📞 Call Now</a>
-  <a class="c2" href="#quote">Get a Quote</a>
+  <a class="c2" href="#get-quote">Get a Quote</a>
 </div>
 
 <script>
-  // Year dropdown + footer year
+  // ===== Settings =====
+  const SHOP_PHONE = '+13018066217';          // quote requests are texted here
+  // Real customer reviews go here, e.g. { text: "Great service!", name: "Jessica R.", place: "Gaithersburg, MD", stars: 5 }
+  const REVIEWS = [];
+
+  const SERVICES = ['Brake Pads & Rotors','Diagnostics','Battery Replacement','Starter Replacement','Alternator Replacement','Tune-Up','Oil Change','Suspension Repair','No-Start Diagnosis','Something else'];
+  const MAKES = [...document.querySelectorAll('#quoteForm select[name=make] option')].map(o => o.value).filter(Boolean);
+
   const now = new Date().getFullYear();
   document.getElementById('yr').textContent = now;
-  const ys = document.getElementById('year');
-  for (let y = now + 1; y >= 1995; y--) ys.add(new Option(y, y));
+  const yearOpts = sel => { sel.add(new Option(sel.id === 'qYear' ? 'Select year' : 'Year', '')); for (let y = now + 1; y >= 1990; y--) sel.add(new Option(y, y)); };
+  yearOpts(document.getElementById('year'));
+  yearOpts(document.getElementById('qYear'));
+  document.getElementById('year').remove(0);
+  const qMake = document.getElementById('qMake');
+  qMake.add(new Option('Select make', ''));
+  MAKES.forEach(m => qMake.add(new Option(m, m)));
+  document.getElementById('qServices').innerHTML = SERVICES.map(sv =>
+    `<label><input type="checkbox" name="services" value="${sv}"><span>${sv.replace('&','&amp;')}</span></label>`).join('');
+  document.getElementById('qDay').min = new Date().toISOString().slice(0, 10);
 
-  // Close mobile menu after tapping a link
+  // Reviews
+  const esc = t => String(t).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+  document.getElementById('reviewList').innerHTML = REVIEWS.length
+    ? REVIEWS.map(r => `<div class="review"><div class="stars">${'★'.repeat(r.stars || 5)}</div><blockquote>"${esc(r.text)}"</blockquote><b>${esc(r.name)}</b><small>${esc(r.place || '')}</small></div>`).join('')
+    : `<div class="review-empty"><b>Customer reviews coming soon</b>We're just getting started online. Had a great repair with us? We'd love to hear about it: text (301) 806-6217.</div>`;
+
+  // Mobile menu
   document.querySelectorAll('#mainnav a').forEach(a => a.addEventListener('click', () => document.getElementById('mainnav').classList.remove('open')));
 
-  // Quote form — TODO: connect to a real form service (Formspree, Netlify Forms, Jobber, etc.)
+  // ===== Quote wizard =====
+  const qw = document.getElementById('qw'), form = document.getElementById('qwForm');
+  const steps = [...form.querySelectorAll('.qw-step')], bars = [...qw.querySelectorAll('.qw-prog span')];
+  const back = document.getElementById('qBack'), next = document.getElementById('qNext'), err = document.getElementById('qErr');
+  let step = 1;
+
+  function show(n) {
+    step = n;
+    steps.forEach(s => s.classList.toggle('on', +s.dataset.step === n));
+    bars.forEach((b, i) => b.classList.toggle('on', i < n));
+    back.style.visibility = n === 1 ? 'hidden' : 'visible';
+    next.style.display = n === 4 ? 'none' : '';
+    err.textContent = '';
+    if (n === 4) buildSummary();
+    qw.querySelector('.qw-box').scrollTop = 0;
+  }
+  function open(n = 1) { qw.classList.add('open'); document.body.style.overflow = 'hidden'; show(n);
+    const f = steps[n - 1].querySelector('input,select,textarea'); if (f && matchMedia('(pointer:fine)').matches) f.focus(); }
+  function close() { qw.classList.remove('open'); document.body.style.overflow = ''; }
+
+  function valid(n) {
+    const box = steps[n - 1];
+    for (const f of box.querySelectorAll('[required]')) {
+      if (!f.value.trim()) { err.textContent = 'Please fill in ' + box.querySelector(`label[for=${f.id}]`).textContent.replace(' *','').toLowerCase() + '.'; f.focus(); return false; }
+    }
+    if (n === 1 && !/^\d{5}$/.test(form.zip.value.trim())) { err.textContent = 'Please enter a 5-digit ZIP code.'; form.zip.focus(); return false; }
+    if (n === 2 && !form.querySelector('input[name=services]:checked')) { err.textContent = 'Please pick at least one service.'; return false; }
+    if (n === 3 && form.phone.value.replace(/\D/g, '').length < 10) { err.textContent = 'Please enter a 10-digit phone number.'; form.phone.focus(); return false; }
+    return true;
+  }
+
+  function buildSummary() {
+    const v = k => form[k].value.trim();
+    const services = [...form.querySelectorAll('input[name=services]:checked')].map(c => c.value).join(', ');
+    let day = v('day');
+    if (day) day = new Date(day + 'T12:00').toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+    const lines = [
+      'QUOTE REQUEST - AM Auto Repair Mobile',
+      `Name: ${v('name')}`,
+      `Phone: ${v('phone')}`,
+      `Vehicle: ${v('year')} ${v('make')} ${v('model')}` + (v('miles') ? ` (${v('miles')} mi)` : ''),
+      `Service: ${services}`,
+      v('problem') && `Problem: ${v('problem')}`,
+      v('drivable') && `Drivable: ${v('drivable')}`,
+      `Location: ZIP ${v('zip')}` + (v('where') ? `, ${v('where')}` : ''),
+      (day || v('time')) && `Preferred: ${[day, v('time')].filter(Boolean).join(', ')}`,
+    ].filter(Boolean);
+    const text = lines.join('\n');
+    document.getElementById('qSummary').textContent = text;
+    // "?&body=" works on both iPhone and Android
+    document.getElementById('qSms').href = `sms:${SHOP_PHONE}?&body=${encodeURIComponent(text)}`;
+  }
+
+  next.addEventListener('click', () => { if (valid(step)) show(step + 1); });
+  back.addEventListener('click', () => show(Math.max(1, step - 1)));
+  form.addEventListener('keydown', e => { if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') { e.preventDefault(); next.click(); } });
+  qw.addEventListener('click', e => { if (e.target === qw || e.target.closest('[data-close]')) close(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && qw.classList.contains('open')) close(); });
+  document.getElementById('qCopy').addEventListener('click', async e => {
+    try { await navigator.clipboard.writeText(document.getElementById('qSummary').textContent); e.target.textContent = 'Copied ✓'; }
+    catch { e.target.textContent = 'Select the text above to copy'; }
+    setTimeout(() => e.target.textContent = 'Copy request', 2500);
+  });
+
+  // Every "Get a quote" / "Book" button opens the wizard; service cards pre-select their service
+  document.addEventListener('click', e => {
+    const a = e.target.closest('a[href="#get-quote"]');
+    if (!a) return;
+    e.preventDefault();
+    if (a.dataset.service) {
+      const box = form.querySelector(`input[name=services][value="${a.dataset.service}"]`);
+      if (box) box.checked = true;
+    }
+    open(1);
+  });
+
+  // Hero quote bar: carry its answers into the wizard and jump ahead
   document.getElementById('quoteForm').addEventListener('submit', e => {
     e.preventDefault();
-    document.getElementById('formMsg').style.display = 'block';
-    e.target.querySelector('button').disabled = true;
+    const h = e.target;
+    form.zip.value = h.zip.value; form.year.value = h.year.value; form.make.value = h.make.value; form.model.value = h.model.value;
+    const svc = form.querySelector(`input[name=services][value="${h.service.value.replace('&amp;','&')}"]`);
+    if (svc) svc.checked = true;
+    open(valid(1) ? 3 : 1);
+    if (step === 3 && !svc) show(2);
+    err.textContent = '';
   });
 </script>
 </body>
