@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AM Auto Repair Mobile | Mobile Mechanic in MD, DC &amp; Northern VA</title>
+<meta name="description" content="Mobile auto repair that comes to you — at home, work or the office. Brakes, diagnostics, batteries, starters, alternators and more across Maryland, Washington DC and Northern Virginia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#e2231a; --red-dark:#b81810; --orange:#e8603c;
+    --navy:#1c2430; --navy-2:#141a23; --ink:#111827; --muted:#5b6472;
+    --line:#e5e7eb; --bg:#ffffff; --soft:#f4f5f7; --star:#f5b301;
+    --radius:10px; --shadow:0 10px 30px rgba(17,24,39,.12);
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;font-family:Inter,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.5}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:Montserrat,sans-serif;line-height:1.1;margin:0}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:Montserrat,sans-serif;font-weight:800;
+       text-transform:uppercase;letter-spacing:.02em;border-radius:6px;padding:14px 26px;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:15px;transition:.15s}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-dark)}
+  .btn-outline{border-color:var(--red);color:var(--red);background:#fff}
+  .btn-outline:hover{background:#fff5f4}
+  .btn-ghost{border-color:#fff;color:#fff}
+  .btn-ghost:hover{background:rgba(255,255,255,.1)}
+  .ico{width:20px;height:20px;flex:none}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;gap:24px;height:76px}
+  .nav .logo img{height:46px;width:auto}
+  .nav nav{display:flex;gap:22px;margin-left:auto}
+  .nav nav a{text-decoration:none;font-weight:600;font-size:14px;color:#2b3340}
+  .nav nav a:hover,.nav nav a.active{color:var(--red)}
+  .nav .actions{display:flex;gap:10px}
+  .nav .actions .btn{padding:10px 16px;font-size:13px;text-transform:none;font-family:Inter,sans-serif;font-weight:700}
+  .menu-btn{display:none;margin-left:auto;background:none;border:0;cursor:pointer;padding:8px}
+
+  /* Hero */
+  .hero{position:relative;background:var(--navy-2);color:#fff;overflow:hidden}
+  .hero-img{position:absolute;inset:0 0 0 40%;background:url(images/hero-mechanic-van.jpg) left center/cover no-repeat}
+  .hero-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy-2) 0%,rgba(20,26,35,.6) 10%,rgba(20,26,35,0) 26%)}
+  .hero .wrap{position:relative;min-height:500px;display:flex;align-items:center;padding-top:48px;padding-bottom:110px}
+  .hero-copy{max-width:600px}
+  .hero h1{font-size:clamp(34px,4.2vw,54px);font-weight:900}
+  .hero h1 span{color:var(--red)}
+  .hero .places{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(20px,2.4vw,28px);margin:14px 0 12px}
+  .hero .places i{color:var(--red);font-style:normal;margin:0 6px}
+  .hero p.lead{font-size:18px;color:#d7dce3;margin:0 0 28px}
+  .badges{display:flex;gap:28px;flex-wrap:wrap}
+  .badge{display:flex;flex-direction:column;align-items:center;text-align:center;gap:8px;font-weight:700;font-size:13px;width:84px}
+  .badge svg{width:38px;height:38px}
+
+  /* Quote card */
+  .quote{position:relative;z-index:5;margin-top:-84px}
+  .quote-card{background:#fff;border-radius:var(--radius);box-shadow:var(--shadow);padding:26px 28px;display:grid;grid-template-columns:260px 1fr;gap:28px;align-items:center}
+  .quote-card h2{font-size:28px;font-weight:900}
+  .quote-card p{margin:6px 0 0;color:var(--muted);font-size:14px}
+  .quote-form{display:grid;grid-template-columns:.9fr .8fr .9fr .9fr 1.6fr auto;gap:10px}
+  .quote-form input,.quote-form select{width:100%;height:48px;border:1px solid #cfd4db;border-radius:6px;padding:0 12px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}
+  .quote-form input:focus,.quote-form select:focus{outline:2px solid var(--red);outline-offset:1px;border-color:transparent}
+  .quote-form .btn{height:48px;white-space:nowrap}
+  .secure{grid-column:1/-1;font-size:12px;color:var(--muted);display:flex;gap:6px;align-items:center}
+  .form-msg{grid-column:1/-1;display:none;background:#ecfdf3;color:#05603a;border-radius:6px;padding:10px 12px;font-weight:600;font-size:14px}
+
+  section{padding:64px 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+  .sec-head h2{font-size:clamp(26px,3vw,34px);font-weight:900}
+  .sec-head p{margin:0;color:var(--muted)}
+  .sec-head .more{margin-left:auto;color:var(--red);font-weight:700;text-decoration:none;font-size:14px}
+
+  /* How it works */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:0;background:#fff;border:1px solid var(--line);border-radius:var(--radius)}
+  .step{display:flex;gap:14px;align-items:flex-start;padding:24px 22px;border-right:1px solid var(--line)}
+  .step:last-child{border-right:0}
+  .num{flex:none;width:30px;height:30px;border-radius:50%;background:var(--red);color:#fff;font-weight:800;display:grid;place-items:center;font-size:14px}
+  .step svg{width:40px;height:40px;flex:none;color:var(--navy)}
+  .step h3{font-size:16px;font-weight:800;margin-bottom:4px}
+  .step p{margin:0;color:var(--muted);font-size:13px}
+
+  /* Services */
+  .services{background:var(--soft)}
+  .svc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+  .svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:20px;display:flex;gap:14px;align-items:center;transition:.15s}
+  .svc:hover{border-color:var(--red);box-shadow:var(--shadow);transform:translateY(-2px)}
+  .svc .chip{width:52px;height:52px;border-radius:10px;background:var(--navy);display:grid;place-items:center;flex:none}
+  .svc .chip svg{width:28px;height:28px;color:#fff}
+  .svc h3{font-size:15px;font-weight:800}
+  .svc p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+
+  /* Promo */
+  .promo{padding:0;background:var(--navy);color:#fff}
+  .promo .wrap{display:grid;grid-template-columns:1fr 1.1fr auto;align-items:center;gap:32px;min-height:200px}
+  .promo-img{align-self:stretch;background:url(images/brakes.jpg) center/cover;margin-left:-20px;position:relative}
+  .promo-img::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,36,48,0) 55%,var(--navy))}
+  .tag{display:inline-block;background:var(--red);font-size:12px;font-weight:800;letter-spacing:.08em;padding:4px 10px;border-radius:3px;text-transform:uppercase}
+  .promo h2{font-size:clamp(34px,4.5vw,52px);font-weight:900;margin:10px 0 4px}
+  .promo h3{font-size:22px;font-weight:800}
+  .promo p{margin:6px 0 0;color:#cbd2dc}
+  .promo .fine{font-size:12px;color:#9aa4b2;margin-top:10px;text-align:center}
+
+  /* Why + reviews */
+  .two{display:grid;grid-template-columns:1fr 1.3fr;gap:48px}
+  .why{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  .why>div{display:flex;gap:12px}
+  .why svg{width:34px;height:34px;flex:none;color:var(--navy)}
+  .why h3{font-size:15px;font-weight:800}
+  .why p{margin:2px 0 0;font-size:13px;color:var(--muted)}
+  .reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .review{border:1px solid var(--line);border-radius:var(--radius);padding:18px;background:#fff;box-shadow:0 2px 8px rgba(17,24,39,.04)}
+  .stars{color:var(--star);letter-spacing:2px;font-size:15px}
+  .review blockquote{margin:8px 0 12px;font-size:14px;color:#2b3340}
+  .review b{display:block;font-size:14px}
+  .review small{color:var(--muted)}
+  h2.small{font-size:24px;font-weight:900;margin-bottom:20px}
+
+  /* Area */
+  .area{background:var(--soft)}
+  .area-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;align-items:center}
+  .checks{list-style:none;padding:0;margin:16px 0 0}
+  .checks li{display:flex;gap:10px;align-items:center;padding:6px 0;font-weight:500}
+  .checks li::before{content:"";width:18px;height:18px;flex:none;background:var(--red);
+    -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E") center/contain no-repeat;
+            mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z'/%3E%3C/svg%3E") center/contain no-repeat}
+  .map{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:10px}
+  .map svg{width:100%;height:auto}
+
+  /* FAQ */
+  .faq{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  details{border:1px solid var(--line);border-radius:8px;padding:0 18px;background:#fff}
+  summary{cursor:pointer;list-style:none;padding:16px 0;font-weight:600;display:flex;justify-content:space-between;gap:12px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--red);font-weight:800;font-size:20px;line-height:1}
+  details[open] summary::after{content:"–"}
+  details p{margin:0 0 16px;color:var(--muted);font-size:14px}
+
+  /* Footer CTA */
+  .cta{background:var(--navy);color:#fff;padding:36px 0}
+  .cta .wrap{display:flex;align-items:center;gap:24px;flex-wrap:wrap}
+  .cta img{height:48px;background:#fff;border-radius:6px;padding:4px 8px}
+  .cta h2{font-size:24px;font-weight:900}
+  .cta p{margin:2px 0 0;color:#cbd2dc}
+  .cta .btns{margin-left:auto;display:flex;gap:12px;flex-wrap:wrap}
+  footer{background:var(--navy-2);color:#9aa4b2;font-size:13px;padding:18px 0}
+  footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  footer a{text-decoration:none}
+  footer a:hover{color:#fff}
+
+  /* Mobile sticky call bar */
+  .callbar{display:none}
+
+  @media (max-width:1100px){
+    .nav nav{display:none}
+    .nav nav.open{display:flex;flex-direction:column;position:absolute;top:76px;left:0;right:0;background:#fff;padding:16px 20px;border-bottom:1px solid var(--line);gap:14px}
+    .menu-btn{display:block;margin-left:0}
+    .nav .actions{margin-left:auto}
+    .quote-card{grid-template-columns:1fr}
+    .quote-form{grid-template-columns:repeat(3,1fr)}
+    .quote-form .btn{grid-column:span 3}
+    .svc-grid{grid-template-columns:repeat(2,1fr)}
+    .steps{grid-template-columns:repeat(2,1fr)}
+    .step:nth-child(2){border-right:0}
+    .step:nth-child(-n+2){border-bottom:1px solid var(--line)}
+    .two,.area-grid{grid-template-columns:1fr}
+  }
+  @media (max-width:760px){
+    .nav .actions .book{display:none}
+    .nav .actions .btn-red{font-size:0;gap:0;padding:12px}
+    .nav .actions .btn-red .ico{width:22px;height:22px}
+    .hero-img{inset:0 0 auto 0;height:260px;background-position:30% center}
+    .hero-img::after{background:linear-gradient(180deg,rgba(20,26,35,0) 50%,var(--navy-2))}
+    .hero .wrap{padding-top:240px;padding-bottom:110px;min-height:0}
+    .badges{gap:12px;justify-content:space-between}
+    .badge{width:72px;font-size:12px}
+    .quote-form{grid-template-columns:1fr 1fr}
+    .quote-form .zip,.quote-form .svc-sel,.quote-form .btn{grid-column:span 2}
+    .steps{grid-template-columns:1fr}
+    .step{border-right:0;border-bottom:1px solid var(--line)}
+    .svc-grid,.reviews,.faq,.why{grid-template-columns:1fr}
+    .promo .wrap{grid-template-columns:1fr;gap:18px;padding-bottom:32px}
+    .promo-img{height:140px;margin:0 -20px}
+    .promo-img::after{background:linear-gradient(180deg,rgba(28,36,48,0) 40%,var(--navy))}
+    .cta .btns{margin-left:0}
+    section{padding:48px 0}
+    .callbar{display:grid;grid-template-columns:1fr 1fr;position:fixed;bottom:0;left:0;right:0;z-index:60;box-shadow:0 -4px 16px rgba(0,0,0,.15)}
+    .callbar a{padding:15px;text-align:center;font-weight:800;text-decoration:none;font-family:Montserrat,sans-serif}
+    .callbar .c1{background:var(--navy);color:#fff}
+    .callbar .c2{background:var(--red);color:#fff}
+    body{padding-bottom:54px}
+  }
+</style>
+</head>
+<body>
+
+<!-- Reusable icons -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M4 6h16v14H4zM4 10h16M8 3v5M16 3v5"/><path fill="currentColor" d="M7 13h3v3H7zm7 0h3v3h-3z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5z"/><path fill="none" stroke="#141a23" stroke-width="2.4" d="m8 12 3 3 5-6"/></symbol>
+  <symbol id="i-dollar" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M15 8.5c-.6-.9-1.7-1.5-3-1.5-1.7 0-3 .9-3 2.3 0 3.3 6 1.9 6 5 0 1.4-1.3 2.4-3 2.4-1.4 0-2.6-.6-3.2-1.6M12 5v2m0 10v2"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3 2 12h3v8h5v-5h4v5h5v-8h3z"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3 6.9 7.5.6-5.7 5 1.7 7.4L12 18l-6.5 3.9 1.7-7.4-5.7-5 7.5-.6z"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path fill="currentColor" d="M5 11 6.8 6.2A2 2 0 0 1 8.7 5h6.6a2 2 0 0 1 1.9 1.2L19 11a2 2 0 0 1 2 2v4h-2v2h-3v-2H8v2H5v-2H3v-4a2 2 0 0 1 2-2zm2.2 0h9.6l-1.3-3.6a.6.6 0 0 0-.6-.4H9.1a.6.6 0 0 0-.6.4zM6.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" d="M6 2h9l4 4v8M6 2v20h8M8 9h8M8 13h6M8 17h3"/><circle cx="18" cy="18" r="4.5" fill="currentColor"/><path fill="none" stroke="#fff" stroke-width="1.6" d="m16 18 1.4 1.4L20 17"/></symbol>
+  <symbol id="i-wrench" viewBox="0 0 24 24"><path fill="currentColor" d="M22.7 19 13.6 9.9c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1a1 1 0 0 0 1.4 0l2.3-2.3a1 1 0 0 0 .1-1.4"/></symbol>
+  <symbol id="i-brake" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path fill="currentColor" d="M16 3.5a10 10 0 0 1 4.5 4.5l-3 1.5a7 7 0 0 0-3-3z"/></symbol>
+  <symbol id="i-engine" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 8h6l2 2h3v3h2v-3h1v8h-1v-3h-2v3h-4l-2 2H8l-2-2H4v-3H2v-4h2v-2h3zM9 5h5"/></symbol>
+  <symbol id="i-battery" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" d="M3 8h18v12H3zM6 8V5h3v3m6 0V5h3v3"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 14h4m-2-2v4m6-2h4"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path fill="currentColor" d="M13 2 4 14h6l-1 8 9-12h-6z"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><path fill="currentColor" d="M19.4 13a7.7 7.7 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.3 7.3 0 0 0-1.7-1L15 3h-4l-.4 2.9a7.3 7.3 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.7 7.7 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.3 7.3 0 0 0 1.7 1L11 21h4l.4-2.9a7.3 7.3 0 0 0 1.7-1l2.5 1 2-3.5zM13 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7" transform="translate(-1)"/></symbol>
+  <symbol id="i-spring" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M8 2h8M8 22h8M7 5l10 2M7 9l10 2M7 13l10 2M7 17l10 2"/></symbol>
+  <symbol id="i-oil" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3s-6 6.6-6 11a6 6 0 0 0 12 0c0-4.4-6-11-6-11"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M12.5 12H22m-3 0v3m-3-3v2"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path fill="currentColor" d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8m-7 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6m14 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6M12 13c-3.3 0-6 1.8-6 4v3h12v-3c0-2.2-2.7-4-6-4m-7 1c-2.2 0-4 1.2-4 2.7V20h3v-3c0-1.1.4-2.1 1-3m14 0c.6.9 1 1.9 1 3v3h3v-3.3c0-1.5-1.8-2.7-4-2.7"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><path fill="currentColor" d="M6 10V8a6 6 0 1 1 12 0v2h1v12H5V10zm2 0h8V8a4 4 0 1 0-8 0z"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7m0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top" aria-label="AM Auto Repair Mobile home"><img src="images/logo.png" alt="AM Auto Repair Mobile"></a>
+    <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('mainnav').classList.toggle('open')">
+      <svg width="26" height="26" viewBox="0 0 24 24"><path stroke="#1c2430" stroke-width="2.4" stroke-linecap="round" d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <nav id="mainnav">
+      <a class="active" href="#top">Home</a>
+      <a href="#services">Services</a>
+      <a href="#quote">Get a Quote</a>
+      <a href="#how">How It Works</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service Area</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="actions">
+      <a class="btn btn-red" href="tel:+13018066217"><svg class="ico"><use href="#i-phone"/></svg>(301) 806-6217</a>
+      <a class="btn btn-outline book" href="#quote"><svg class="ico"><use href="#i-cal"/></svg>Book Appointment</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <!-- HERO: mechanic working on the car with the branded van parked at the customer's house -->
+  <section class="hero" style="padding:0">
+    <div class="hero-img" role="img" aria-label="AM Auto Repair Mobile mechanic working under the hood, with the branded work van parked in a customer's driveway"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <h1>Mobile Auto Repair<br>That <span>Comes to You</span></h1>
+        <div class="places">Home<i>•</i>Work<i>•</i>Office</div>
+        <p class="lead">Professional, convenient, and reliable mobile mechanic service throughout Maryland, DC &amp; Northern Virginia.</p>
+        <div class="badges">
+          <div class="badge"><svg><use href="#i-shield"/></svg>Professional Service</div>
+          <div class="badge"><svg><use href="#i-dollar"/></svg>Upfront Pricing</div>
+          <div class="badge"><svg><use href="#i-home"/></svg>We Come to You</div>
+          <div class="badge"><svg><use href="#i-star"/></svg>5-Star Reviews</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <div class="quote" id="quote">
+    <div class="wrap">
+      <div class="quote-card">
+        <div>
+          <h2>Get Your Quote</h2>
+          <p>Tell us about your vehicle and what you need. We'll get back to you with a fast, no-obligation estimate.</p>
+        </div>
+        <form class="quote-form" id="quoteForm">
+          <input class="zip" name="zip" inputmode="numeric" pattern="[0-9]{5}" maxlength="5" placeholder="ZIP Code" required aria-label="ZIP Code">
+          <select name="year" id="year" required aria-label="Year"><option value="">Year</option></select>
+          <select name="make" required aria-label="Make">
+            <option value="">Make</option>
+            <option>Acura</option><option>Audi</option><option>BMW</option><option>Buick</option><option>Cadillac</option><option>Chevrolet</option><option>Chrysler</option><option>Dodge</option><option>Ford</option><option>GMC</option><option>Honda</option><option>Hyundai</option><option>Infiniti</option><option>Jeep</option><option>Kia</option><option>Lexus</option><option>Lincoln</option><option>Mazda</option><option>Mercedes-Benz</option><option>Nissan</option><option>Ram</option><option>Subaru</option><option>Tesla</option><option>Toyota</option><option>Volkswagen</option><option>Volvo</option><option>Other</option>
+          </select>
+          <input name="model" placeholder="Model" required aria-label="Model">
+          <select class="svc-sel" name="service" required aria-label="What service do you need?">
+            <option value="">What service do you need?</option>
+            <option>Brake Pads &amp; Rotors</option><option>Diagnostics / Check Engine</option><option>Battery Replacement</option><option>Starter Replacement</option><option>Alternator Replacement</option><option>Tune-Up</option><option>Suspension Repair</option><option>No-Start Diagnosis</option><option>Oil Change</option><option>Something else</option>
+          </select>
+          <button class="btn btn-red" type="submit">Get My Quote <svg class="ico"><use href="#i-arrow"/></svg></button>
+          <div class="secure"><svg class="ico" style="width:14px;height:14px"><use href="#i-lock"/></svg>Your information is safe and secure.</div>
+          <div class="form-msg" id="formMsg">Thanks! We got your request and will text or call you shortly with your quote. Need it faster? Call (301) 806-6217.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how">
+    <div class="wrap">
+      <div class="sec-head"><h2>How It Works</h2><p>Get expert auto repair in 4 simple steps.</p></div>
+      <div class="steps">
+        <div class="step"><span class="num">1</span><svg><use href="#i-car"/></svg><div><h3>Tell Us About Your Vehicle</h3><p>Enter your vehicle info and the service you need.</p></div></div>
+        <div class="step"><span class="num">2</span><svg><use href="#i-doc"/></svg><div><h3>Get Your Quote</h3><p>Receive a transparent, upfront estimate.</p></div></div>
+        <div class="step"><span class="num">3</span><svg><use href="#i-cal"/></svg><div><h3>Pick an Appointment</h3><p>Choose a date and time that works for you.</p></div></div>
+        <div class="step"><span class="num">4</span><svg><use href="#i-wrench"/></svg><div><h3>We Come to You</h3><p>Our mobile mechanic arrives and gets the job done.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="wrap">
+      <div class="sec-head"><h2>Popular Services</h2><p>From routine maintenance to complex repairs, we've got you covered.</p><a class="more" href="#quote">Get a quote →</a></div>
+      <div class="svc-grid">
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-brake"/></svg></span><div><h3>Brake Pads &amp; Rotors</h3><p>Squeaks, grinding, soft pedal</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-engine"/></svg></span><div><h3>Diagnostics</h3><p>Check engine light &amp; scans</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-gear"/></svg></span><div><h3>Starter Replacement</h3><p>Clicking or slow crank</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-bolt"/></svg></span><div><h3>Alternator Replacement</h3><p>Dim lights, dying battery</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-battery"/></svg></span><div><h3>Battery Replacement</h3><p>Testing &amp; install on-site</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-oil"/></svg></span><div><h3>Tune-Ups</h3><p>Plugs, filters, fluids</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-spring"/></svg></span><div><h3>Suspension Repair</h3><p>Shocks, struts, control arms</p></div></a>
+        <a class="svc" href="#quote" style="text-decoration:none"><span class="chip"><svg><use href="#i-key"/></svg></span><div><h3>No-Start Diagnosis</h3><p>Car won't start? We'll find out why</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROMO -->
+  <section class="promo">
+    <div class="wrap">
+      <div class="promo-img" aria-hidden="true"></div>
+      <div>
+        <span class="tag">Limited Time Offer</span>
+        <h2>Save $60</h2>
+        <h3>on Brake Pad &amp; Rotor Service</h3>
+        <p>Safe stops. A smoother ride. Right at your location.</p>
+      </div>
+      <div>
+        <a class="btn btn-red" href="#quote">Get Your Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <div class="fine">Cannot be combined with other offers.<br>Limited time only.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY + REVIEWS -->
+  <section id="reviews">
+    <div class="wrap two">
+      <div>
+        <h2 class="small">Why Choose AM Auto Repair Mobile?</h2>
+        <div class="why">
+          <div><svg><use href="#i-shield"/></svg><div><h3>No Waiting Room</h3><p>We come to you.</p></div></div>
+          <div><svg><use href="#i-dollar"/></svg><div><h3>Upfront Pricing</h3><p>No surprises.</p></div></div>
+          <div><svg><use href="#i-wrench"/></svg><div><h3>Convenient Scheduling</h3><p>On your time.</p></div></div>
+          <div><svg><use href="#i-users"/></svg><div><h3>A Mechanic You Can Trust</h3><p>Professional, reliable service.</p></div></div>
+        </div>
+      </div>
+      <div>
+        <h2 class="small">What Our Customers Say</h2>
+        <!-- TODO: replace these sample reviews with real customer reviews (e.g. from Google) before launch -->
+        <div class="reviews">
+          <div class="review"><div class="stars">★★★★★</div><blockquote>"Super convenient and professional! AM Auto Repair came to my house, fixed my brakes, and saved me so much time. Highly recommend!"</blockquote><b>Jessica R.</b><small>Gaithersburg, MD</small></div>
+          <div class="review"><div class="stars">★★★★★</div><blockquote>"Honest, knowledgeable, and arrived right on time. Will definitely use again!"</blockquote><b>Marcus T.</b><small>Silver Spring, MD</small></div>
+          <div class="review"><div class="stars">★★★★★</div><blockquote>"Best mechanic service I've ever used. Fast, fair pricing, and super convenient."</blockquote><b>Danielle K.</b><small>Arlington, VA</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE AREA -->
+  <section class="area" id="area">
+    <div class="wrap area-grid">
+      <div>
+        <h2 class="small" style="margin-bottom:6px">Areas We Serve</h2>
+        <p style="margin:0;font-weight:700;display:flex;gap:8px;align-items:center"><svg class="ico" style="color:var(--red)"><use href="#i-pin"/></svg>Maryland, Washington DC &amp; Northern Virginia</p>
+        <ul class="checks">
+          <li>Montgomery County, MD</li>
+          <li>Prince George's County, MD</li>
+          <li>Washington, DC</li>
+          <li>Northern Virginia (Fairfax, Arlington, Alexandria)</li>
+          <li>And surrounding areas</li>
+        </ul>
+        <a class="btn btn-outline" style="margin-top:18px" href="tel:+13018066217">Not sure if we cover you? Call us</a>
+      </div>
+      <div class="map" aria-label="Service area map: Maryland, Washington DC and Northern Virginia">
+        <svg viewBox="0 0 520 300" role="img">
+          <rect width="520" height="300" fill="#eef1f5"/>
+          <path d="M0 210 C80 190 120 230 200 215 S330 150 380 175 470 230 520 220" fill="none" stroke="#bcd3ea" stroke-width="10"/>
+          <g stroke="#d6dbe3" stroke-width="2" fill="none"><path d="M40 0 L120 300"/><path d="M0 90 L520 70"/><path d="M300 0 L260 300"/><path d="M0 260 L520 240"/><path d="M430 0 L470 300"/></g>
+          <path d="M150 60 L330 40 L420 80 L440 150 L380 175 L330 200 L300 240 L230 250 L180 215 L130 170 Z" fill="rgba(226,35,26,.16)" stroke="#e2231a" stroke-width="2.5" stroke-dasharray="6 5"/>
+          <text x="360" y="70" font-family="Montserrat" font-weight="800" font-size="22" fill="#1c2430">MD</text>
+          <text x="170" y="245" font-family="Montserrat" font-weight="800" font-size="22" fill="#1c2430">VA</text>
+          <text x="318" y="182" font-family="Montserrat" font-weight="800" font-size="20" fill="#1c2430">DC</text>
+          <g fill="#e2231a"><path d="M300 150a10 10 0 0 0-10 10c0 8 10 19 10 19s10-11 10-19a10 10 0 0 0-10-10"/><circle cx="300" cy="160" r="3.5" fill="#fff"/>
+          <path d="M250 90a10 10 0 0 0-10 10c0 8 10 19 10 19s10-11 10-19a10 10 0 0 0-10-10"/><circle cx="250" cy="100" r="3.5" fill="#fff"/>
+          <path d="M215 175a10 10 0 0 0-10 10c0 8 10 19 10 19s10-11 10-19a10 10 0 0 0-10-10"/><circle cx="215" cy="185" r="3.5" fill="#fff"/></g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="wrap">
+      <h2 class="small">Frequently Asked Questions</h2>
+      <div class="faq">
+        <details><summary>Do you offer mobile service at my location?</summary><p>Yes — that's all we do. We come to your home, workplace, or office parking lot anywhere in our MD, DC and Northern Virginia service area.</p></details>
+        <details><summary>What types of vehicles do you work on?</summary><p>Most domestic and import cars, SUVs, and light trucks. Tell us your year, make and model in the quote form and we'll confirm.</p></details>
+        <details><summary>How much does a typical repair cost?</summary><p>It depends on the vehicle and the job. Request a quote and we'll send a clear, upfront price before any work begins — no surprises.</p></details>
+        <details><summary>How do I schedule an appointment?</summary><p>Fill out the quote form or call/text (301) 806-6217. Once you approve your quote, pick a date and time that works for you.</p></details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="cta">
+  <div class="wrap">
+    <img src="images/logo.png" alt="AM Auto Repair Mobile">
+    <div><h2>Ready to Get Started?</h2><p>Get a fast, no-obligation quote and let us come to you.</p></div>
+    <div class="btns">
+      <a class="btn btn-red" href="#quote">Get My Quote <svg class="ico"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-ghost" href="tel:+13018066217"><svg class="ico"><use href="#i-phone"/></svg>(301) 806-6217</a>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr"></span> AM Auto Repair Mobile. All rights reserved. · Keeping You on the Road.</span>
+    <span><a href="#">Privacy Policy</a> &nbsp;|&nbsp; <a href="#">Terms of Service</a></span>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a class="c1" href="tel:+13018066217">📞 Call Now</a>
+  <a class="c2" href="#quote">Get a Quote</a>
+</div>
+
+<script>
+  // Year dropdown + footer year
+  const now = new Date().getFullYear();
+  document.getElementById('yr').textContent = now;
+  const ys = document.getElementById('year');
+  for (let y = now + 1; y >= 1995; y--) ys.add(new Option(y, y));
+
+  // Close mobile menu after tapping a link
+  document.querySelectorAll('#mainnav a').forEach(a => a.addEventListener('click', () => document.getElementById('mainnav').classList.remove('open')));
+
+  // Quote form — TODO: connect to a real form service (Formspree, Netlify Forms, Jobber, etc.)
+  document.getElementById('quoteForm').addEventListener('submit', e => {
+    e.preventDefault();
+    document.getElementById('formMsg').style.display = 'block';
+    e.target.querySelector('button').disabled = true;
+  });
+</script>
+</body>
+</html>
